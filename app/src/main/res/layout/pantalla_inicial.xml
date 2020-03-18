@@ -5,7 +5,7 @@
     android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorDeFondo"
+    android:background="@color/Rojo"
     android:orientation="vertical">
 
     <TextView
@@ -42,10 +42,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/logoAppArriba" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/logoAppArriba"
         android:layout_width="185dp"
         android:layout_height="185dp"
         android:layout_marginStart="113dp"

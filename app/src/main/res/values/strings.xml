@@ -3,4 +3,12 @@
     <string name="nombreAppMayus">METAS \nDIARIAS</string>
     <string name="toquePantalla">Toque la pantalla para continuar</string>
     <string name="logoDescripcion">Este es el Logo de la aplicacion</string>
+    <string name="hintEmail">Email</string>
+    <string name="hintPasswd">Contraseña</string>
+    <string name="iniciarSesion">Iniciar Sesión</string>
+    <string name="registrarme">Registrarme</string>
+    <string name="blurryImageDescripcion">Imagen borrosa del fondo</string>
+    <string name="twitterLogoDescription">Logo de Twitter para indicar que se comparte en Twitter</string>
+    <string name="googleLogoDescription">Logo de Google para indicar que se comparte en Twitter</string>
+    <string name="FacebookLogoDescription">Logo de Facebook para indicar que se comparte en Twitter</string>
 </resources>
