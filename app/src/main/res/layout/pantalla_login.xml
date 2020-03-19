@@ -45,7 +45,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
         android:layout_marginEnd="80dp"
-        android:layout_marginTop="300dp"
+        android:layout_marginTop="250dp"
+        android:textColorHint="@color/Blanco"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -53,12 +54,12 @@
             android:id="@+id/emailInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/hintEmail"
             android:backgroundTint="@color/Amarillo"
-            android:textColor="#FFFFFF"
-            android:textColorHighlight="#FFFFFF"
-            android:textColorHint="#FFFFFF"
-            android:textColorLink="#FFFFFF" />
+            android:hint="@string/hintEmail"
+            android:textColor="@color/Blanco"
+            android:textColorHighlight="@color/Blanco"
+            android:textColorHint="@color/Blanco"
+            android:textColorLink="@color/Blanco" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -66,8 +67,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
-        android:layout_marginTop="355dp"
         android:layout_marginEnd="80dp"
+        android:layout_marginTop="305dp"
+        android:textColorHint="@color/Blanco"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -75,9 +77,9 @@
             android:id="@+id/passwdInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/hintPasswd"
             android:backgroundTint="@color/Amarillo"
-            android:textColorHint="#FFFFFF" />
+            android:hint="@string/hintPasswd"
+            android:textColorHint="@color/Blanco" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
@@ -97,7 +99,7 @@
         app:layout_constraintTop_toBottomOf="@+id/InputPasswdLayout" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/registrarme"
         android:layout_width="249dp"
         android:layout_height="40dp"
         android:layout_marginStart="82dp"
@@ -107,7 +109,7 @@
         android:backgroundTint="@color/Transparente"
         android:text="@string/registrarme"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/Blanco"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/iniciarSesion" />
@@ -122,7 +124,7 @@
         android:contentDescription="@string/twitterLogoDescription"
         android:translationZ="10dp"
         app:layout_constraintEnd_toStartOf="@+id/shareButtonGoogle"
-        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/registrarme"
         app:srcCompat="@drawable/twitterlogo" />
 
     <Button
@@ -136,7 +138,7 @@
         android:backgroundTint="@color/Amarillo"
         app:layout_constraintEnd_toStartOf="@+id/shareButtonGoogle"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintTop_toBottomOf="@+id/registrarme" />
 
     <ImageView
         android:id="@+id/googleLogo"
@@ -147,7 +149,7 @@
         android:contentDescription="@string/googleLogoDescription"
         android:translationZ="10dp"
         app:layout_constraintStart_toEndOf="@+id/twitterLogo"
-        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/registrarme"
         app:srcCompat="@drawable/googlelogo" />
 
     <Button
@@ -161,7 +163,7 @@
         android:backgroundTint="@color/Amarillo"
         app:layout_constraintEnd_toStartOf="@+id/shareButtonFacebook"
         app:layout_constraintStart_toEndOf="@+id/shareButtonTwitter"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintTop_toBottomOf="@+id/registrarme" />
 
     <ImageView
         android:id="@+id/facebookLogo"
@@ -172,7 +174,7 @@
         android:contentDescription="@string/FacebookLogoDescription"
         android:translationZ="10dp"
         app:layout_constraintStart_toEndOf="@+id/googleLogo"
-        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/registrarme"
         app:srcCompat="@drawable/facebooklogo" />
 
     <Button
@@ -186,7 +188,7 @@
         android:backgroundTint="@color/Amarillo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/shareButtonGoogle"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintTop_toBottomOf="@+id/registrarme" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
