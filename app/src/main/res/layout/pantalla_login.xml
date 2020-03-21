@@ -11,14 +11,10 @@
 
     <ImageView
         android:id="@+id/blurryImage"
-        android:layout_width="735dp"
-        android:layout_height="740dp"
-        android:layout_marginTop="735dp"
-        android:layout_marginBottom="740dp"
-        android:adjustViewBounds="false"
-        android:alpha="0.3"
+        android:layout_width="725dp"
+        android:layout_height="735dp"
+        android:alpha="0.2"
         android:contentDescription="@string/blurryImageDescripcion"
-        android:cropToPadding="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,7 +22,7 @@
         app:srcCompat="@drawable/applogo" />
 
     <ImageView
-        android:id="@+id/logoAppArriba"
+        android:id="@+id/appLogo"
         android:layout_width="119dp"
         android:layout_height="119dp"
         android:layout_marginStart="113dp"
@@ -56,6 +52,8 @@
             android:layout_height="wrap_content"
             android:backgroundTint="@color/Amarillo"
             android:hint="@string/hintEmail"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
             android:textColor="@color/Blanco"
             android:textColorHighlight="@color/Blanco"
             android:textColorHint="@color/Blanco"
@@ -78,7 +76,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/Amarillo"
+            android:inputType="textPassword"
             android:hint="@string/hintPasswd"
+            android:singleLine="true"
             android:textColorHint="@color/Blanco" />
     </com.google.android.material.textfield.TextInputLayout>
 
