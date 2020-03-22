@@ -1,6 +1,8 @@
 package com.example.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Spinner;
@@ -10,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 
-public class PantallaRegistroActivity extends AppCompatActivity {
+public class registroActivity extends AppCompatActivity {
 
     ImageView blurryImage;
     ImageView userLogo;
@@ -27,7 +29,7 @@ public class PantallaRegistroActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.pantalla_registro);
+        setContentView(R.layout.registro);
 
         blurryImage = findViewById(R.id.blurryImage);
         userLogo = findViewById(R.id.userLogo);
@@ -40,5 +42,10 @@ public class PantallaRegistroActivity extends AppCompatActivity {
         sexo = findViewById(R.id.sexo);
         añoNacimiento = findViewById(R.id.añoNacimiento);
         registrarmeButton = findViewById(R.id.registrarmeButton);
+    }
+
+    public void onClickRegistrarme(View view){
+        Intent intent = new Intent(this, menuActivity.class);
+        startActivity(intent);
     }
 }

@@ -18,7 +18,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button6"
+        app:layout_constraintTop_toBottomOf="@+id/barraArriba"
         app:srcCompat="@drawable/applogo" />
 
     <ImageView
@@ -29,7 +29,7 @@
         android:layout_marginTop="98dp"
         android:layout_marginEnd="113dp"
         android:layout_marginBottom="62dp"
-        android:contentDescription="@string/UserLogoDescription"
+        android:contentDescription="@string/userLogoDescription"
         app:layout_constraintBottom_toTopOf="@+id/InputEmailLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,7 +37,7 @@
         app:srcCompat="@drawable/userlogo" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/barraArriba"
         android:layout_width="412dp"
         android:layout_height="55dp"
         android:background="@color/Negro"
@@ -50,8 +50,9 @@
     <RelativeLayout
         android:layout_width="410dp"
         android:layout_height="55dp"
+        android:clickable="false"
         android:translationZ="10dp"
-        app:layout_constraintEnd_toEndOf="@+id/button6"
+        app:layout_constraintEnd_toEndOf="@+id/barraArriba"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -206,6 +207,7 @@
         android:layout_marginTop="16dp"
         android:background="@drawable/roundedbutton"
         android:backgroundTint="@color/Amarillo"
+        android:onClick="onClickRegistrarme"
         android:text="@string/registrarme"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="@color/Blanco"

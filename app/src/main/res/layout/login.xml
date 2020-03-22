@@ -102,11 +102,12 @@
         android:id="@+id/registrarme"
         android:layout_width="249dp"
         android:layout_height="40dp"
-        android:layout_marginStart="82dp"
+        android:layout_marginStart="81dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="80dp"
+        android:layout_marginEnd="81dp"
         android:background="@drawable/roundedbutton"
         android:backgroundTint="@color/Transparente"
+        android:onClick="onClick2"
         android:text="@string/registrarme"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="@color/Blanco"
@@ -123,12 +124,12 @@
         android:adjustViewBounds="false"
         android:contentDescription="@string/twitterLogoDescription"
         android:translationZ="10dp"
-        app:layout_constraintEnd_toStartOf="@+id/shareButtonGoogle"
+        app:layout_constraintEnd_toStartOf="@+id/logInGoogle"
         app:layout_constraintTop_toBottomOf="@+id/registrarme"
         app:srcCompat="@drawable/twitterlogo" />
 
     <Button
-        android:id="@+id/shareButtonTwitter"
+        android:id="@+id/logInTwitter"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginStart="123dp"
@@ -136,7 +137,8 @@
         android:layout_marginEnd="15dp"
         android:background="@drawable/roundedbutton"
         android:backgroundTint="@color/Amarillo"
-        app:layout_constraintEnd_toStartOf="@+id/shareButtonGoogle"
+        android:onClick="onClickTwitter"
+        app:layout_constraintEnd_toStartOf="@+id/logInGoogle"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/registrarme" />
 
@@ -153,7 +155,7 @@
         app:srcCompat="@drawable/googlelogo" />
 
     <Button
-        android:id="@+id/shareButtonGoogle"
+        android:id="@+id/logInGoogle"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginStart="15dp"
@@ -161,8 +163,9 @@
         android:layout_marginEnd="15dp"
         android:background="@drawable/roundedbutton"
         android:backgroundTint="@color/Amarillo"
-        app:layout_constraintEnd_toStartOf="@+id/shareButtonFacebook"
-        app:layout_constraintStart_toEndOf="@+id/shareButtonTwitter"
+        android:onClick="onClickGoogle"
+        app:layout_constraintEnd_toStartOf="@+id/logInFacebook"
+        app:layout_constraintStart_toEndOf="@+id/logInTwitter"
         app:layout_constraintTop_toBottomOf="@+id/registrarme" />
 
     <ImageView
@@ -171,14 +174,14 @@
         android:layout_height="30dp"
         android:layout_marginStart="34dp"
         android:layout_marginTop="16dp"
-        android:contentDescription="@string/FacebookLogoDescription"
+        android:contentDescription="@string/facebookLogoDescription"
         android:translationZ="10dp"
         app:layout_constraintStart_toEndOf="@+id/googleLogo"
         app:layout_constraintTop_toBottomOf="@+id/registrarme"
         app:srcCompat="@drawable/facebooklogo" />
 
     <Button
-        android:id="@+id/shareButtonFacebook"
+        android:id="@+id/logInFacebook"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginStart="15dp"
@@ -186,8 +189,9 @@
         android:layout_marginEnd="123dp"
         android:background="@drawable/roundedbutton"
         android:backgroundTint="@color/Amarillo"
+        android:onClick="onClickFacebook"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/shareButtonGoogle"
+        app:layout_constraintStart_toEndOf="@+id/logInGoogle"
         app:layout_constraintTop_toBottomOf="@+id/registrarme" />
 
 

@@ -7,6 +7,12 @@
     <string name="hintPasswd">Contraseña</string>
     <string name="iniciarSesion">Iniciar Sesión</string>
     <string name="registrarme">Registrarme</string>
+    <string name="menu">Menú</string>
+    <string name="menuNumero1">1</string>
+    <string name="menuNumero2">2</string>
+    <string name="menuNumero3">3</string>
+    <string name="menuNumero4">4</string>
+    <string name="nivelPalabra">Nivel</string>
     <string name="blurryImageDescripcion">Imagen borrosa del fondo</string>
     <string name="twitterLogoDescription">Logo de Twitter para indicar que se comparte en Twitter</string>
     <string name="googleLogoDescription">Logo de Google para indicar que se comparte en Twitter</string>
