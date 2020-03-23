@@ -22,6 +22,118 @@
         app:srcCompat="@drawable/applogo" />
 
     <Button
+        android:id="@+id/transparentBtn1Recordatorio"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/Transparente"
+        android:clickable="false"
+        app:layout_constraintBottom_toTopOf="@+id/opcion1RecordatoriosBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barraArriba"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/transparentBtn2Recordatorio"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="132dp"
+        android:background="@color/Transparente"
+        android:clickable="false"
+        app:layout_constraintBottom_toTopOf="@+id/barraAbajo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/opcion2RecordatoriosBtn" />
+
+    <Button
+        android:id="@+id/opcion1RecordatoriosBtn"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:alpha="0.9"
+        android:background="@color/Amarillo"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/Blanco"
+        app:layout_constraintBottom_toTopOf="@+id/opcion2RecordatoriosBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/transparentBtn1Recordatorio" />
+
+    <TextView
+        android:id="@+id/opcion1RecordatoriosTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="@string/primeraOpcionRecordatorios"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/Blanco"
+        android:textSize="20sp"
+        android:translationZ="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/opcion1RecordatoriosBtn"
+        app:layout_constraintStart_toEndOf="@+id/verListaImagen"
+        app:layout_constraintTop_toTopOf="@+id/opcion1RecordatoriosBtn" />
+
+    <ImageView
+        android:id="@+id/verListaImagen"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="311dp"
+        android:contentDescription="@string/verListaDescription"
+        android:translationZ="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/opcion1RecordatoriosBtn"
+        app:layout_constraintEnd_toEndOf="@+id/opcion1RecordatoriosBtn"
+        app:layout_constraintStart_toStartOf="@+id/opcion1RecordatoriosBtn"
+        app:layout_constraintTop_toTopOf="@+id/opcion1RecordatoriosBtn"
+        app:srcCompat="@drawable/verlista" />
+
+    <Button
+        android:id="@+id/opcion2RecordatoriosBtn"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:alpha="0.7"
+        android:background="@color/Amarillo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/transparentBtn2Recordatorio"
+        app:layout_constraintTop_toBottomOf="@+id/opcion1RecordatoriosBtn" />
+
+    <TextView
+        android:id="@+id/opcion2RecordatoriosTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="@string/segundaOpcionRecordatorios"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/Blanco"
+        android:textSize="20sp"
+        android:translationZ="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/opcion2RecordatoriosBtn"
+        app:layout_constraintStart_toEndOf="@+id/addRecordatorioImagen"
+        app:layout_constraintTop_toTopOf="@+id/opcion2RecordatoriosBtn" />
+
+    <ImageView
+        android:id="@+id/addRecordatorioImagen"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="311dp"
+        android:contentDescription="@string/addRecordatorioDescription"
+        android:translationZ="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/opcion2RecordatoriosBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/opcion2RecordatoriosBtn"
+        app:srcCompat="@drawable/addrecordatorio" />
+
+    <Button
         android:id="@+id/barraArriba"
         android:layout_width="412dp"
         android:layout_height="55dp"
@@ -31,216 +143,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/menuOpcion1"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginTop="90dp"
-        android:layout_marginBottom="20dp"
-        android:alpha="0.9"
-        android:background="@color/Amarillo"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textColor="@color/Blanco"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/menuOpcion2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/barraArriba" />
-
-    <TextView
-        android:id="@+id/opcion1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/menuOpcion1"
-        android:textColor="@color/Blanco"
-        android:textSize="20sp"
-        android:translationZ="10dp"
-        app:layout_constraintBottom_toBottomOf="@+id/menuOpcion1"
-        app:layout_constraintStart_toEndOf="@+id/aroNegro1"
-        app:layout_constraintTop_toTopOf="@+id/menuOpcion1" />
-
-    <ImageView
-        android:id="@+id/aroNegro1"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="10dp"
-        android:contentDescription="@string/aroNegroDescription"
-        android:translationZ="10dp"
-        app:layout_constraintBottom_toBottomOf="@+id/menuOpcion1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/menuOpcion1"
-        app:srcCompat="@drawable/aronegro" />
-
-    <TextView
-        android:id="@+id/opcion1Numero"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="3dp"
-        android:text="@string/menuNumero1"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:translationZ="10dp"
-        app:layout_constraintBottom_toBottomOf="@+id/aroNegro1"
-        app:layout_constraintEnd_toEndOf="@+id/aroNegro1"
-        app:layout_constraintHorizontal_bias="0.492"
-        app:layout_constraintStart_toStartOf="@+id/aroNegro1"
-        app:layout_constraintTop_toTopOf="@+id/aroNegro1"
-        app:layout_constraintVertical_bias="0.48" />
-
-    <Button
-        android:id="@+id/menuOpcion2"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"
-        android:alpha="0.8"
-        android:background="@color/Amarillo"
-        app:layout_constraintBottom_toTopOf="@+id/menuOpcion3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/menuOpcion1" />
-
-    <TextView
-        android:id="@+id/opcion2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/menuOpcion2"
-        android:textColor="@color/Blanco"
-        android:textSize="20sp"
-        android:translationZ="10dp"
-        app:layout_constraintBottom_toBottomOf="@+id/menuOpcion2"
-        app:layout_constraintStart_toEndOf="@+id/aroNegro2"
-        app:layout_constraintTop_toBottomOf="@+id/menuOpcion1" />
-
-    <ImageView
-        android:id="@+id/aroNegro2"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="10dp"
-        android:contentDescription="@string/aroNegroDescription"
-        android:translationZ="10dp"
-        app:layout_constraintBottom_toBottomOf="@+id/menuOpcion2"
-        app:layout_constraintStart_toStartOf="@+id/menuOpcion2"
-        app:layout_constraintTop_toTopOf="@+id/menuOpcion2"
-        app:srcCompat="@drawable/aronegro" />
-
-    <TextView
-        android:id="@+id/opcion2Numero"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/menuNumero2"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:translationZ="10dp"
-        app:layout_constraintBottom_toBottomOf="@+id/aroNegro2"
-        app:layout_constraintEnd_toStartOf="@+id/opcion2"
-        app:layout_constraintHorizontal_bias="0.477"
-        app:layout_constraintStart_toStartOf="@+id/aroNegro2"
-        app:layout_constraintTop_toTopOf="@+id/aroNegro2"
-        app:layout_constraintVertical_bias="0.48" />
-
-    <Button
-        android:id="@+id/menuOpcion3"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"
-        android:alpha="0.7"
-        android:background="@color/Amarillo"
-        android:onClick="onClickRecordatoriosBtn"
-        app:layout_constraintBottom_toTopOf="@+id/menuOpcion4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/menuOpcion2" />
-
-    <TextView
-        android:id="@+id/opcion3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/menuOpcion3"
-        android:textColor="@color/Blanco"
-        android:textSize="20sp"
-        android:translationZ="10dp"
-        app:layout_constraintBottom_toBottomOf="@+id/menuOpcion3"
-        app:layout_constraintStart_toEndOf="@+id/aroNegro3"
-        app:layout_constraintTop_toBottomOf="@+id/menuOpcion2" />
-
-    <ImageView
-        android:id="@+id/aroNegro3"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="10dp"
-        android:contentDescription="@string/aroNegroDescription"
-        android:translationZ="10dp"
-        app:layout_constraintBottom_toBottomOf="@+id/menuOpcion3"
-        app:layout_constraintStart_toStartOf="@+id/menuOpcion3"
-        app:layout_constraintTop_toBottomOf="@+id/menuOpcion2"
-        app:srcCompat="@drawable/aronegro" />
-
-    <TextView
-        android:id="@+id/opcion3Numero"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/menuNumero3"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:translationZ="10dp"
-        app:layout_constraintBottom_toBottomOf="@+id/aroNegro3"
-        app:layout_constraintEnd_toStartOf="@+id/opcion3"
-        app:layout_constraintHorizontal_bias="0.477"
-        app:layout_constraintStart_toStartOf="@+id/aroNegro3"
-        app:layout_constraintTop_toTopOf="@+id/aroNegro3"
-        app:layout_constraintVertical_bias="0.52" />
-
-    <Button
-        android:id="@+id/menuOpcion4"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="132dp"
-        android:alpha="0.6"
-        android:background="@color/Amarillo"
-        app:layout_constraintBottom_toTopOf="@+id/barraAbajo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/menuOpcion3" />
-
-    <TextView
-        android:id="@+id/opcion4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:contentDescription="@string/aroNegroDescription"
-        android:text="@string/menuOpcion4"
-        android:textColor="@color/Blanco"
-        android:textSize="20sp"
-        android:translationZ="10dp"
-        app:layout_constraintBottom_toBottomOf="@+id/menuOpcion4"
-        app:layout_constraintStart_toEndOf="@+id/aroNegro4"
-        app:layout_constraintTop_toBottomOf="@+id/menuOpcion3" />
-
-    <ImageView
-        android:id="@+id/aroNegro4"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="10dp"
-        android:contentDescription="@string/aroNegroDescription"
-        android:translationZ="10dp"
-        app:layout_constraintBottom_toBottomOf="@+id/menuOpcion4"
-        app:layout_constraintStart_toStartOf="@+id/menuOpcion4"
-        app:layout_constraintTop_toBottomOf="@+id/menuOpcion3"
-        app:srcCompat="@drawable/aronegro" />
-
-    <TextView
-        android:id="@+id/opcion4Numero"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/menuNumero4"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:translationZ="10dp"
-        app:layout_constraintBottom_toBottomOf="@+id/aroNegro4"
-        app:layout_constraintEnd_toStartOf="@+id/opcion4"
-        app:layout_constraintHorizontal_bias="0.477"
-        app:layout_constraintStart_toStartOf="@+id/aroNegro4"
-        app:layout_constraintTop_toTopOf="@+id/aroNegro4"
-        app:layout_constraintVertical_bias="0.52" />
 
     <RelativeLayout
         android:layout_width="410dp"
@@ -255,9 +157,9 @@
             android:id="@+id/tituloScreen"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="190dp"
+            android:layout_marginStart="140dp"
             android:layout_marginTop="10dp"
-            android:text="@string/menu"
+            android:text="@string/recordatoriosPalabra"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textColor="@color/Blanco"
             android:textStyle="bold" />
@@ -282,6 +184,7 @@
             android:layout_marginTop="5dp"
             android:alpha="0.2"
             android:background="@drawable/roundedbutton"
+            android:onClick="onClickAppLogo"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
     </RelativeLayout>
@@ -348,10 +251,10 @@
             android:id="@+id/nivelNumero"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/nivelEstrella"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
+            android:layout_above="@+id/nivelEstrella"
             android:layout_marginTop="14dp"
             android:layout_marginEnd="40dp"
             android:layout_marginBottom="11dp"

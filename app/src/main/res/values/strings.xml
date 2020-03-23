@@ -13,6 +13,14 @@
     <string name="menuNumero3">3</string>
     <string name="menuNumero4">4</string>
     <string name="nivelPalabra">Nivel</string>
+    <string name="recordatoriosPalabra">Recordatorios</string>
+    <string name="primeraOpcionRecordatorios">Ver lista</string>
+    <string name="menuOpcion1">Metas alimentarias propuestas</string>
+    <string name="menuOpcion2">Metas deportivas propuestas</string>
+    <string name="menuOpcion3">Recordatorios</string>
+    <string name="menuOpcion4">Metas personalizadas</string>
+    <string name="segundaOpcionRecordatorios">Añadir recordatorio</string>
+
     <string name="blurryImageDescripcion">Imagen borrosa del fondo</string>
     <string name="twitterLogoDescription">Logo de Twitter para indicar que se comparte en Twitter</string>
     <string name="googleLogoDescription">Logo de Google para indicar que se comparte en Twitter</string>
