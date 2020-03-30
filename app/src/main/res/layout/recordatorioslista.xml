@@ -9,6 +9,33 @@
     android:foregroundTint="#303233"
     android:orientation="vertical">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="620dp"
+        app:layout_constraintBottom_toTopOf="@+id/barraAbajo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barraArriba">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:text="TextViewAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" />
+        </LinearLayout>
+    </ScrollView>
+
     <ImageView
         android:id="@+id/blurryImage"
         android:layout_width="705dp"
@@ -20,119 +47,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/barraArriba"
         app:srcCompat="@drawable/applogo" />
-
-    <Button
-        android:id="@+id/transparentBtn1Recordatorio"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginTop="90dp"
-        android:layout_marginBottom="20dp"
-        android:background="@color/Transparente"
-        android:clickable="false"
-        app:layout_constraintBottom_toTopOf="@+id/opcion1RecordatoriosBtn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/barraArriba"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <Button
-        android:id="@+id/transparentBtn2Recordatorio"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="132dp"
-        android:background="@color/Transparente"
-        android:clickable="false"
-        app:layout_constraintBottom_toTopOf="@+id/barraAbajo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/opcion2RecordatoriosBtn" />
-
-    <Button
-        android:id="@+id/opcion1RecordatoriosBtn"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"
-        android:alpha="0.9"
-        android:background="@color/Amarillo"
-        android:onClick="onClickVerListaOpcion"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textColor="@color/Blanco"
-        app:layout_constraintBottom_toTopOf="@+id/opcion2RecordatoriosBtn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/transparentBtn1Recordatorio" />
-
-    <TextView
-        android:id="@+id/opcion1RecordatoriosTxt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:text="@string/primeraOpcionRecordatorios"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textColor="@color/Blanco"
-        android:textSize="20sp"
-        android:translationZ="10dp"
-        app:layout_constraintBottom_toBottomOf="@+id/opcion1RecordatoriosBtn"
-        app:layout_constraintStart_toEndOf="@+id/verListaImagen"
-        app:layout_constraintTop_toTopOf="@+id/opcion1RecordatoriosBtn" />
-
-    <ImageView
-        android:id="@+id/verListaImagen"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="311dp"
-        android:contentDescription="@string/verListaDescription"
-        android:translationZ="10dp"
-        app:layout_constraintBottom_toBottomOf="@+id/opcion1RecordatoriosBtn"
-        app:layout_constraintEnd_toEndOf="@+id/opcion1RecordatoriosBtn"
-        app:layout_constraintStart_toStartOf="@+id/opcion1RecordatoriosBtn"
-        app:layout_constraintTop_toTopOf="@+id/opcion1RecordatoriosBtn"
-        app:srcCompat="@drawable/verlista" />
-
-    <Button
-        android:id="@+id/opcion2RecordatoriosBtn"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"
-        android:alpha="0.7"
-        android:background="@color/Amarillo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/transparentBtn2Recordatorio"
-        app:layout_constraintTop_toBottomOf="@+id/opcion1RecordatoriosBtn" />
-
-    <TextView
-        android:id="@+id/opcion2RecordatoriosTxt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:text="@string/segundaOpcionRecordatorios"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textColor="@color/Blanco"
-        android:textSize="20sp"
-        android:translationZ="10dp"
-        app:layout_constraintBottom_toBottomOf="@+id/opcion2RecordatoriosBtn"
-        app:layout_constraintStart_toEndOf="@+id/addRecordatorioImagen"
-        app:layout_constraintTop_toTopOf="@+id/opcion2RecordatoriosBtn" />
-
-    <ImageView
-        android:id="@+id/addRecordatorioImagen"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="311dp"
-        android:contentDescription="@string/addRecordatorioDescription"
-        android:translationZ="10dp"
-        app:layout_constraintBottom_toBottomOf="@+id/opcion2RecordatoriosBtn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/opcion2RecordatoriosBtn"
-        app:srcCompat="@drawable/addrecordatorio" />
 
     <Button
         android:id="@+id/barraArriba"
@@ -158,9 +72,9 @@
             android:id="@+id/tituloScreen"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="140dp"
+            android:layout_marginStart="185dp"
             android:layout_marginTop="10dp"
-            android:text="@string/recordatoriosPalabra"
+            android:text="@string/listaWord"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textColor="@color/Blanco"
             android:textStyle="bold" />

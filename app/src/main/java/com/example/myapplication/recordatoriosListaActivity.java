@@ -7,22 +7,16 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 
 
-public class recordatoriosMenuActivity extends AppCompatActivity {
+public class recordatoriosListaActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.recordatoriosmenu);
+        setContentView(R.layout.recordatorioslista);
     }
 
     public void onClickAppLogo(View view){
         Intent intent = new Intent(this, menuActivity.class);
         startActivity(intent);
     }
-
-    public void onClickVerListaOpcion(View view){
-        Intent intent = new Intent(this, recordatoriosListaActivity.class);
-        startActivity(intent);
-    }
 }
-
