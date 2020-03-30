@@ -24,5 +24,11 @@ public class recordatoriosMenuActivity extends AppCompatActivity {
         Intent intent = new Intent(this, recordatoriosListaActivity.class);
         startActivity(intent);
     }
+
+    public void onAñadirRecordatorio(View view){
+        Intent intent = new Intent(this, recordatoriosAddActivity.class);
+        startActivity(intent);
+    }
+
 }
 

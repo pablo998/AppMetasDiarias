@@ -21,6 +21,18 @@
         app:layout_constraintTop_toBottomOf="@+id/barraArriba"
         app:srcCompat="@drawable/applogo" />
 
+    <ImageView
+        android:id="@+id/signoMasImagen"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="20dp"
+        android:translationZ="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/botonAñadirRecordatorio"
+        app:layout_constraintEnd_toStartOf="@+id/SumarRecordatorioTextView"
+        app:layout_constraintStart_toStartOf="@+id/botonAñadirRecordatorio"
+        app:layout_constraintTop_toTopOf="@+id/botonAñadirRecordatorio"
+        app:srcCompat="@drawable/signomas" />
+
     <Button
         android:id="@+id/barraArriba"
         android:layout_width="412dp"
@@ -69,122 +81,41 @@
         android:alpha="0.8"
         android:background="@drawable/roundedbutton"
         android:backgroundTint="@color/Amarillo"
-        app:layout_constraintBottom_toTopOf="@+id/obtenerMetasPersoBtn"
+        app:layout_constraintBottom_toTopOf="@id/botonAñadirRecordatorio"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tituloMarcoFormulario" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/LayoutPesoInput"
-        android:layout_width="202dp"
+    <TextView
+        android:id="@+id/notifications_time"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="100dp"
-        android:layout_marginBottom="5dp"
-        android:hint="@string/pesoHint"
-        android:textColorHint="@color/Blanco"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="20dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/Negro"
+        android:textSize="20sp"
         android:translationZ="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/LayyoutAlturaInput"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/fondoCuestionario">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:singleLine="true"
-            android:translationZ="10dp" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/LayyoutAlturaInput"
-        android:layout_width="202dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="100dp"
-        android:layout_marginBottom="10dp"
-        android:hint="@string/alturaHint"
-        android:textColorHint="@color/Blanco"
-        android:translationZ="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/relativeLayoutMetasPers1"
+        app:layout_constraintBottom_toBottomOf="@+id/fondoCuestionario"
         app:layout_constraintEnd_toEndOf="@+id/fondoCuestionario"
-        app:layout_constraintStart_toStartOf="@+id/fondoCuestionario"
-        app:layout_constraintTop_toBottomOf="@+id/LayoutPesoInput">
+        app:layout_constraintStart_toEndOf="@+id/laHoraSeleccionaEsTextView"
+        app:layout_constraintTop_toBottomOf="@+id/change_notification"
+        tools:text="12:00" />
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:singleLine="true"
-            android:translationZ="10dp" />
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <RelativeLayout
-        android:id="@+id/relativeLayoutMetasPers1"
-        android:layout_width="230dp"
+    <TextView
+        android:id="@+id/laHoraSeleccionaEsTextView"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="15dp"
         android:layout_marginBottom="25dp"
+        android:text="@string/time_selected_is"
+        android:textColor="@color/Negro"
+        android:textSize="20sp"
         android:translationZ="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/relativeLayoutMetasPers2"
-        app:layout_constraintEnd_toEndOf="@+id/fondoCuestionario"
-        app:layout_constraintStart_toStartOf="@+id/fondoCuestionario"
-        app:layout_constraintTop_toBottomOf="@+id/LayyoutAlturaInput">
-
-        <Spinner
-            android:id="@+id/sexoSpinnerMetasPer"
-            android:layout_width="110dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="0dp"
-            android:entries="@array/sexo"
-            android:spinnerMode="dropdown"
-            android:translationZ="10dp" />
-
-        <Spinner
-            android:id="@+id/añosSpinnerMetasPer"
-            android:layout_width="110dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_marginEnd="0dp"
-            android:entries="@array/añosNacimiento"
-            android:translationZ="10dp" />
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/relativeLayoutMetasPers2"
-        android:layout_width="230dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="25dp"
-        android:translationZ="10dp"
-        app:layout_constraintEnd_toEndOf="@+id/fondoCuestionario"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/relativeLayoutMetasPers1">
-
-        <Spinner
-            android:id="@+id/diasSpinnerMetasPer"
-            android:layout_width="110dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="19dp"
-            android:layout_marginEnd="0dp"
-            android:entries="@array/diaDelMes" />
-
-        <Spinner
-            android:id="@+id/mesesSpinnerMetasPer"
-            android:layout_width="110dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="1dp"
-            android:entries="@array/mesesDelAño"
-            android:translationZ="10dp" />
-
-    </RelativeLayout>
+        app:layout_constraintBottom_toBottomOf="@+id/fondoCuestionario"
+        app:layout_constraintEnd_toStartOf="@id/notifications_time"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -279,9 +210,9 @@
             android:id="@+id/tituloScreen"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="100dp"
+            android:layout_marginStart="120dp"
             android:layout_marginTop="10dp"
-            android:text="@string/menuOpcion4"
+            android:text="@string/añadirRecordatorio"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textColor="@color/Blanco"
             android:textStyle="bold" />
@@ -311,47 +242,71 @@
             app:layout_constraintTop_toTopOf="parent" />
     </RelativeLayout>
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/LayoutDescripcionRecordatorio"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="120dp"
+        android:textColorHint="@color/Blanco"
+        android:translationZ="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/fondoCuestionario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/fondoCuestionario">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputDescripcionRecordatorio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/recordatorioHintDescripcion"
+            android:singleLine="true"
+            android:textColor="@color/Blanco"
+            android:translationZ="10dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/SumarRecordatorioTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:text="@string/sumarRecordatorioAListaBotonTexto"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/Blanco"
+        android:textSize="20sp"
+        android:translationZ="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/botonAñadirRecordatorio"
+        app:layout_constraintStart_toEndOf="@id/signoMasImagen"
+        app:layout_constraintTop_toTopOf="@+id/botonAñadirRecordatorio" />
+
     <Button
-        android:id="@+id/obtenerMetasPersoBtn"
+        android:id="@+id/botonAñadirRecordatorio"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_marginTop="40dp"
         android:layout_marginBottom="50dp"
         android:alpha="0.7"
         android:background="@color/Amarillo"
-        android:onClick="onClickObtenerMetas"
         app:layout_constraintBottom_toTopOf="@+id/barraAbajo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/fondoCuestionario" />
 
-    <ImageView
-        android:id="@+id/imagenObtenerMetasPerso"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="311dp"
-        android:contentDescription="@string/obtenerMetasPersoDescription"
-        android:translationZ="10dp"
-        app:layout_constraintBottom_toBottomOf="@+id/obtenerMetasPersoBtn"
-        app:layout_constraintEnd_toEndOf="@+id/obtenerMetasPersoBtn"
-        app:layout_constraintStart_toStartOf="@+id/obtenerMetasPersoBtn"
-        app:layout_constraintTop_toTopOf="@+id/obtenerMetasPersoBtn"
-        app:srcCompat="@drawable/metasperso" />
-
-    <TextView
-        android:id="@+id/obtenerMetasPersoTxt"
+    <Button
+        android:id="@+id/change_notification"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:text="@string/obtenerMetasPersonalizadas"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="@color/Rojo"
+        android:gravity="center_horizontal"
+        android:text="@string/change_time"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textColor="@color/Blanco"
+        android:textColor="@color/Negro"
         android:textSize="20sp"
         android:translationZ="10dp"
-        app:layout_constraintBottom_toBottomOf="@+id/obtenerMetasPersoBtn"
-        app:layout_constraintStart_toEndOf="@+id/imagenObtenerMetasPerso"
-        app:layout_constraintTop_toTopOf="@+id/obtenerMetasPersoBtn" />
+        app:layout_constraintBottom_toTopOf="@+id/laHoraSeleccionaEsTextView"
+        app:layout_constraintEnd_toEndOf="@+id/fondoCuestionario"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LayoutDescripcionRecordatorio" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

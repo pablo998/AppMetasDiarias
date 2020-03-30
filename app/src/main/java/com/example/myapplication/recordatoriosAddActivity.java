@@ -19,7 +19,7 @@ import com.example.myapplication.R;
 
 import java.util.Calendar;
 
-public class recordatoriosListaActivity extends AppCompatActivity {
+public class recordatoriosAddActivity extends AppCompatActivity {
 
     private TextView notificationsTime;
     private int alarmID = 1;
@@ -28,7 +28,7 @@ public class recordatoriosListaActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.recordatorioslista);
+        setContentView(R.layout.recordatoriosaddnuevo);
 
         settings = getSharedPreferences(getString(R.string.app_name), Context.MODE_PRIVATE);
 
@@ -52,7 +52,7 @@ public class recordatoriosListaActivity extends AppCompatActivity {
                 int hour = mcurrentTime.get(Calendar.HOUR_OF_DAY);
                 int minute = mcurrentTime.get(Calendar.MINUTE);
                 TimePickerDialog mTimePicker;
-                mTimePicker = new TimePickerDialog(recordatoriosListaActivity.this, new TimePickerDialog.OnTimeSetListener() {
+                mTimePicker = new TimePickerDialog(recordatoriosAddActivity.this, new TimePickerDialog.OnTimeSetListener() {
                     @Override
                     public void onTimeSet(TimePicker timePicker, int selectedHour, int selectedMinute) {
                         String finalHour, finalMinute;
@@ -75,11 +75,11 @@ public class recordatoriosListaActivity extends AppCompatActivity {
 
                         edit.commit();
 
-                        Toast.makeText(recordatoriosListaActivity.this, getString(R.string.changed_to,
+                        Toast.makeText(recordatoriosAddActivity.this, getString(R.string.changed_to,
                                 finalHour + ":" + finalMinute), Toast.LENGTH_LONG).show();
 
 
-                        setAlarm(alarmID, today.getTimeInMillis(), recordatoriosListaActivity.this);
+                        setAlarm(alarmID, today.getTimeInMillis(), recordatoriosAddActivity.this);
                     }
                 }, hour, minute, true);//Yes 24 hour time
                 mTimePicker.setTitle(getString(R.string.select_time));
