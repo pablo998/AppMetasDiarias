@@ -25,4 +25,15 @@
     <string name="twitterLogoDescription">Logo de Twitter para indicar que se comparte en Twitter</string>
     <string name="googleLogoDescription">Logo de Google para indicar que se comparte en Twitter</string>
     <string name="FacebookLogoDescription">Logo de Facebook para indicar que se comparte en Twitter</string>
+
+
+    <string name="menuFrutas">Frutas</string>
+    <string name="menuHidratacion">Hidratacion</string>
+    <string name="menuComida">Comida diaria</string>
+    <string name="informacion">informacion General</string>
+    <string name="metasAlimentarias">Metas alimentarias</string>
+    <string name="menuCaminar">Caminar</string>
+    <string name="menuCorrer">Correr</string>
+    <string name="menuEjercicio">Ejercicio variado</string>
+    <string name="metasDeportivas">Metas deportivas</string>
 </resources>
