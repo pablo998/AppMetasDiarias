@@ -100,12 +100,12 @@
         android:textSize="20sp"
         android:translationZ="10dp"
         app:layout_constraintBottom_toBottomOf="@+id/menuOpcion2"
-        app:layout_constraintStart_toEndOf="@+id/hidraimg"
+        app:layout_constraintStart_toEndOf="@+id/correrimg"
         app:layout_constraintTop_toBottomOf="@+id/menuOpcion1"
         app:layout_constraintVertical_bias="0.681" />
 
     <ImageView
-        android:id="@+id/hidraimg"
+        android:id="@+id/correrimg"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginStart="10dp"
@@ -140,12 +140,12 @@
         android:textSize="20sp"
         android:translationZ="10dp"
         app:layout_constraintBottom_toBottomOf="@+id/menuOpcion3"
-        app:layout_constraintStart_toEndOf="@+id/Comidadiaria"
+        app:layout_constraintStart_toEndOf="@+id/ejercimg"
         app:layout_constraintTop_toBottomOf="@+id/menuOpcion2" />
 
 
     <ImageView
-        android:id="@+id/Comidadiaria"
+        android:id="@+id/ejercimg"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginStart="16dp"
@@ -172,7 +172,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/Comidadiaria" />
+        app:layout_constraintTop_toBottomOf="@id/ejercimg" />
 
     <RelativeLayout
         android:layout_width="410dp"

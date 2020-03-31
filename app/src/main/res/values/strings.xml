@@ -32,4 +32,8 @@
     <string name="menuComida">Comida diaria</string>
     <string name="informacion">informacion General</string>
     <string name="metasAlimentarias">Metas alimentarias</string>
+    <string name="menuCaminar">Caminar</string>
+    <string name="menuCorrer">Correr</string>
+    <string name="menuEjercicio">Ejercicio variado</string>
+    <string name="metasDeportivas">Metas deportivas</string>
 </resources>
