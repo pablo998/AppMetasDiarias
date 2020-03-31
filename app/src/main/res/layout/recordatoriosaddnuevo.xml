@@ -94,6 +94,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginEnd="20dp"
         android:gravity="center_horizontal"
+        android:inputType="time"
         android:textColor="@color/Negro"
         android:textSize="20sp"
         android:translationZ="10dp"

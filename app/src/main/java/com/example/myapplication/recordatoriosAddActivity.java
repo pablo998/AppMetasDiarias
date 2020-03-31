@@ -11,6 +11,7 @@ import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
@@ -24,6 +25,7 @@ public class recordatoriosAddActivity extends AppCompatActivity {
     private TextView notificationsTime;
     private int alarmID = 1;
     private SharedPreferences settings;
+    Button añadirRecordatorioBoton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +41,8 @@ public class recordatoriosAddActivity extends AppCompatActivity {
 
 
         notificationsTime = (TextView) findViewById(R.id.notifications_time);
+        añadirRecordatorioBoton = (Button) findViewById(R.id.botonAñadirRecordatorio);
+
 
         if(hour.length() > 0)
         {
@@ -90,7 +94,10 @@ public class recordatoriosAddActivity extends AppCompatActivity {
         });
     }
 
-
+    public void onClickAppLogo(View view){
+        Intent intent = new Intent(this, menuActivity.class);
+        startActivity(intent);
+    }
 
     private static void setAlarm(int i, Long timestamp, Context ctx) {
 

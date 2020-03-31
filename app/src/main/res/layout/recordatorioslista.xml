@@ -9,63 +9,385 @@
     android:foregroundTint="#303233"
     android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:orientation="vertical"
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addAlarmaBoton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="320dp"
+        android:layout_marginTop="485dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="@color/Naranja"
+        android:clickable="true"
+        android:focusable="auto"
+        android:onClick="onAñadirRecordatorio"
+        android:tint="@color/Blanco"
+        app:borderWidth="1.5dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scrollView2"></LinearLayout>
+        app:layout_constraintTop_toTopOf="@+id/scrollViewRecords"
+        app:srcCompat="@drawable/alarma" />
 
     <ScrollView
-        android:id="@+id/scrollView2"
+        android:id="@+id/scrollViewRecords"
         android:layout_width="match_parent"
-        android:layout_height="520dp"
-        app:layout_constraintBottom_toTopOf="@+id/barraAbajo"
+        android:layout_height="615dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/barraArriba"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintTop_toBottomOf="@+id/LayoutBarraArriba">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/change_notification"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="20dp"
-                android:gravity="center_horizontal"
-                android:text="@string/change_time"
-                android:textColor="@color/Negro"
-                android:textSize="30sp"
-                android:translationZ="10dp" />
+                android:id="@+id/infoLista"
+                android:layout_width="370dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/roundedbutton"
+                android:backgroundTint="@color/Amarillo"
+                android:clickable="false"
+                android:layout_marginTop="15dp"
+                android:text="@string/listaLayoutInfo"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/notifications_time"
+            <RelativeLayout
+                android:id="@+id/layoutrecord1"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="20dp"
-                android:gravity="center_horizontal"
-                android:textSize="30sp"
-                android:translationZ="10dp"
-                tools:text="12:00" />
+                android:layout_height="match_parent"
+                tools:visibility="visible">
 
-            <TextView
+                <RadioButton
+                    android:id="@+id/radio1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="0dp"
+                    android:translationZ="10dp" />
+
+                <Switch
+                    android:id="@+id/switch1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="43dp"
+                    android:translationZ="10dp" />
+
+                <Button
+                    android:id="@+id/recordatorio1"
+                    android:layout_width="350dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="67dp"
+                    android:layout_marginEnd="0dp"
+                    android:backgroundTint="@color/Amarillo"
+                    android:text="@string/recordatorio1Title"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    tools:visibility="visible" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutrecord2"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:text="@string/time_selected_is"
-                android:textSize="30sp"
-                android:translationZ="10dp" />
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/radio2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="0dp"
+                    android:translationZ="10dp" />
+
+                <Switch
+                    android:id="@+id/switch2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="43dp"
+                    android:translationZ="10dp" />
+
+                <Button
+                    android:id="@+id/recordatorio2"
+                    android:layout_width="350dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="4dp"
+                    android:backgroundTint="@color/Amarillo"
+                    android:text="@string/recordatorio2Title"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutrecord3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RadioButton
+                    android:id="@+id/radio3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="0dp"
+                    android:translationZ="10dp" />
+
+                <Switch
+                    android:id="@+id/switch3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="43dp"
+                    android:translationZ="10dp" />
+
+                <Button
+                    android:id="@+id/recordatorio3"
+                    android:layout_width="350dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="0dp"
+                    android:backgroundTint="@color/Amarillo"
+                    android:text="@string/recordatorio3Title"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutrecord4"
+                android:layout_width="match_parent"
+                android:layout_height="70dp">
+                <RadioButton
+                    android:id="@+id/radio4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="0dp"
+                    android:translationZ="10dp" />
+
+                <Switch
+                    android:id="@+id/switch4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="43dp"
+                    android:translationZ="10dp" />
+
+                <Button
+                    android:id="@+id/recordatorio4"
+                    android:layout_width="350dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="0dp"
+                    android:backgroundTint="@color/Amarillo"
+                    android:text="@string/recordatorio4Title"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutrecord5"
+                android:layout_width="match_parent"
+                android:layout_height="70dp">
+
+                <RadioButton
+                    android:id="@+id/radio5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="0dp"
+                    android:translationZ="10dp" />
+
+                <Switch
+                    android:id="@+id/switch5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="43dp"
+                    android:translationZ="10dp" />
+
+                <Button
+                    android:id="@+id/recordatorio5"
+                    android:layout_width="350dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="0dp"
+                    android:backgroundTint="@color/Amarillo"
+                    android:text="@string/recordatorio5Title"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutrecord6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/radio6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="0dp"
+                    android:translationZ="10dp" />
+
+                <Switch
+                    android:id="@+id/switch6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="43dp"
+                    android:translationZ="10dp" />
+
+                <Button
+                    android:id="@+id/recordatorio6"
+                    android:layout_width="350dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="0dp"
+                    android:backgroundTint="@color/Amarillo"
+                    android:text="@string/recordatorio6Title"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutrecord7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/radio7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="0dp"
+                    android:translationZ="10dp" />
+
+                <Switch
+                    android:id="@+id/switch7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="43dp"
+                    android:translationZ="10dp" />
+
+                <Button
+                    android:id="@+id/recordatorio7"
+                    android:layout_width="350dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="0dp"
+                    android:backgroundTint="@color/Amarillo"
+                    android:text="@string/recordatorio7Title"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutrecord8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/radio8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="0dp"
+                    android:translationZ="10dp" />
+
+                <Switch
+                    android:id="@+id/switch8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="43dp"
+                    android:translationZ="10dp" />
+
+                <Button
+                    android:id="@+id/recordatorio8"
+                    android:layout_width="350dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="0dp"
+                    android:backgroundTint="@color/Amarillo"
+                    android:text="@string/recordatorio8Title"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutrecord9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/radio9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="0dp"
+                    android:translationZ="10dp" />
+
+                <Switch
+                    android:id="@+id/switch9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="43dp"
+                    android:translationZ="10dp" />
+
+                <Button
+                    android:id="@+id/recordatorio9"
+                    android:layout_width="350dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="0dp"
+                    android:backgroundTint="@color/Amarillo"
+                    android:text="@string/recordatorio9Title"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            </RelativeLayout>
+
         </LinearLayout>
-
-
     </ScrollView>
 
     <ImageView
@@ -92,6 +414,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <RelativeLayout
+        android:id="@+id/LayoutBarraArriba"
         android:layout_width="410dp"
         android:layout_height="55dp"
         android:clickable="false"
@@ -143,9 +466,11 @@
         android:background="@color/Negro"
         android:clickable="false"
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <RelativeLayout
+        android:id="@+id/LayoutBarraAbajo"
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:clickable="false"
@@ -153,7 +478,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/barraArriba"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" >
+        app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
             android:id="@+id/userNameLogo"
@@ -198,10 +523,10 @@
             android:id="@+id/nivelNumero"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_above="@+id/nivelEstrella"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_above="@+id/nivelEstrella"
             android:layout_marginTop="14dp"
             android:layout_marginEnd="40dp"
             android:layout_marginBottom="11dp"
