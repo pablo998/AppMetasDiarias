@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Rojo"
+    android:foregroundTint="#303233"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/blurryImage"
+        android:layout_width="725dp"
+        android:layout_height="735dp"
+        android:alpha="0.2"
+        android:contentDescription="@string/blurryImageDescripcion"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/applogo" />
+
+    <ImageView
+        android:id="@+id/appLogo"
+        android:layout_width="119dp"
+        android:layout_height="119dp"
+        android:layout_marginStart="113dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="113dp"
+        android:contentDescription="@string/logoDescripcion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.772"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/applogo" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/InputEmailLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginTop="250dp"
+        android:textColorHint="@color/Blanco"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/emailInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/Amarillo"
+            android:hint="@string/hintEmail"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            android:textColor="@color/Blanco"
+            android:textColorHighlight="@color/Blanco"
+            android:textColorHint="@color/Blanco"
+            android:textColorLink="@color/Blanco" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/InputPasswdLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginTop="305dp"
+        android:textColorHint="@color/Blanco"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwdInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/Amarillo"
+            android:inputType="textPassword"
+            android:hint="@string/hintPasswd"
+            android:singleLine="true"
+            android:textColorHint="@color/Blanco" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/iniciarSesion"
+        android:layout_width="249dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="81dp"
+        android:background="@drawable/roundedbutton"
+        android:backgroundTint="@color/Amarillo"
+        android:text="@string/iniciarSesion"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/InputPasswdLayout" />
+
+    <Button
+        android:id="@+id/registrarme"
+        android:layout_width="249dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="81dp"
+        android:background="@drawable/roundedbutton"
+        android:backgroundTint="@color/Transparente"
+        android:onClick="onClick2"
+        android:text="@string/registrarme"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/Blanco"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iniciarSesion" />
+
+    <ImageView
+        android:id="@+id/twitterLogo"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="34dp"
+        android:adjustViewBounds="false"
+        android:contentDescription="@string/twitterLogoDescription"
+        android:translationZ="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/logInGoogle"
+        app:layout_constraintTop_toBottomOf="@+id/registrarme"
+        app:srcCompat="@drawable/twitterlogo" />
+
+    <Button
+        android:id="@+id/logInTwitter"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/roundedbutton"
+        android:backgroundTint="@color/Amarillo"
+        android:onClick="onClickTwitter"
+        app:layout_constraintEnd_toStartOf="@+id/logInGoogle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registrarme" />
+
+    <ImageView
+        android:id="@+id/googleLogo"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/googleLogoDescription"
+        android:translationZ="10dp"
+        app:layout_constraintStart_toEndOf="@+id/twitterLogo"
+        app:layout_constraintTop_toBottomOf="@+id/registrarme"
+        app:srcCompat="@drawable/googlelogo" />
+
+    <Button
+        android:id="@+id/logInGoogle"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/roundedbutton"
+        android:backgroundTint="@color/Amarillo"
+        android:onClick="onClickGoogle"
+        app:layout_constraintEnd_toStartOf="@+id/logInFacebook"
+        app:layout_constraintStart_toEndOf="@+id/logInTwitter"
+        app:layout_constraintTop_toBottomOf="@+id/registrarme" />
+
+    <ImageView
+        android:id="@+id/facebookLogo"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/facebookLogoDescription"
+        android:translationZ="10dp"
+        app:layout_constraintStart_toEndOf="@+id/googleLogo"
+        app:layout_constraintTop_toBottomOf="@+id/registrarme"
+        app:srcCompat="@drawable/facebooklogo" />
+
+    <Button
+        android:id="@+id/logInFacebook"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="123dp"
+        android:background="@drawable/roundedbutton"
+        android:backgroundTint="@color/Amarillo"
+        android:onClick="onClickFacebook"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/logInGoogle"
+        app:layout_constraintTop_toBottomOf="@+id/registrarme" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

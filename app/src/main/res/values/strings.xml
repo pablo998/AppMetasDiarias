@@ -3,4 +3,26 @@
     <string name="nombreAppMayus">METAS \nDIARIAS</string>
     <string name="toquePantalla">Toque la pantalla para continuar</string>
     <string name="logoDescripcion">Este es el Logo de la aplicacion</string>
+    <string name="hintEmail">Email</string>
+    <string name="hintPasswd">Contraseña</string>
+    <string name="iniciarSesion">Iniciar Sesión</string>
+    <string name="registrarme">Registrarme</string>
+    <string name="menu">Menú</string>
+    <string name="menuNumero1">1</string>
+    <string name="menuNumero2">2</string>
+    <string name="menuNumero3">3</string>
+    <string name="menuNumero4">4</string>
+    <string name="nivelPalabra">Nivel</string>
+    <string name="recordatoriosPalabra">Recordatorios</string>
+    <string name="primeraOpcionRecordatorios">Ver lista</string>
+    <string name="menuOpcion1">Metas alimentarias propuestas</string>
+    <string name="menuOpcion2">Metas deportivas propuestas</string>
+    <string name="menuOpcion3">Recordatorios</string>
+    <string name="menuOpcion4">Metas personalizadas</string>
+    <string name="segundaOpcionRecordatorios">Añadir recordatorio</string>
+
+    <string name="blurryImageDescripcion">Imagen borrosa del fondo</string>
+    <string name="twitterLogoDescription">Logo de Twitter para indicar que se comparte en Twitter</string>
+    <string name="googleLogoDescription">Logo de Google para indicar que se comparte en Twitter</string>
+    <string name="FacebookLogoDescription">Logo de Facebook para indicar que se comparte en Twitter</string>
 </resources>

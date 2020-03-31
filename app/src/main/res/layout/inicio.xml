@@ -5,7 +5,7 @@
     android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorDeFondo"
+    android:background="@color/Rojo"
     android:orientation="vertical">
 
     <TextView
@@ -13,15 +13,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="177dp"
-        android:layout_marginTop="172dp"
+        android:layout_marginTop="152dp"
         android:layout_marginEnd="177dp"
+        android:layout_marginBottom="40dp"
         android:text="@string/nombreAppMayus"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="#FFFFFF"
-        android:textColorHighlight="#FFFFFF"
-        android:textColorHint="#FFFFFF"
-        android:textColorLink="#FFFFFF"
+        android:textColor="@color/Blanco"
         android:textStyle="bold"
+        android:translationZ="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/appLogo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -31,29 +31,47 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="177dp"
+        android:layout_marginTop="56dp"
         android:layout_marginEnd="177dp"
-        android:layout_marginBottom="200dp"
+        android:layout_marginBottom="250dp"
         android:text="@string/toquePantalla"
         android:textColor="#FFFFFF"
         android:textColorHighlight="#FFFFFF"
         android:textColorHint="#FFFFFF"
         android:textColorLink="#FFFFFF"
+        android:translationZ="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appLogo" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/appLogo"
         android:layout_width="185dp"
         android:layout_height="185dp"
         android:layout_marginStart="113dp"
-        android:layout_marginTop="13dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="113dp"
+        android:layout_marginBottom="56dp"
         android:contentDescription="@string/logoDescripcion"
+        android:translationZ="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/toquePantalla"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nombreAppMayus"
         app:srcCompat="@drawable/applogo" />
+
+    <Button
+        android:id="@+id/botonTransparente"
+        android:layout_width="411dp"
+        android:layout_height="731dp"
+        android:background="@color/Rojo"
+        android:onClick="onClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
