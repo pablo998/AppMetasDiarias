@@ -36,4 +36,11 @@
     <string name="menuCorrer">Correr</string>
     <string name="menuEjercicio">Ejercicio variado</string>
     <string name="metasDeportivas">Metas deportivas</string>
+    <string name="Frutas">Frutas</string>
+    <string name="InfoFrutas">La fruta es buena para...</string>
+    <string name="contador1">3</string>
+    <string name="Platanos">Plátanos</string>
+    <string name="Manzanas">Manzanas</string>
+    <string name="Naranjas">Naranjas</string>
+    <string name="textoLevelUp">Explicar las metas y métodos de obtencion de puntos, aumento de metas....</string>
 </resources>
