@@ -43,4 +43,8 @@
     <string name="Manzanas">Manzanas</string>
     <string name="Naranjas">Naranjas</string>
     <string name="textoLevelUp">Explicar las metas y métodos de obtencion de puntos, aumento de metas....</string>
+    <string name="infohidra">El cuerpo humano necesita de liquidos para un correcto funcionamiento</string>
+    <string name="Otros">Otros</string>
+    <string name="Zumos">Zumos</string>
+    <string name="Agua">Agua</string>
 </resources>
