@@ -52,4 +52,6 @@
     <string name="ensalada">Ensalada</string>
     <string name="carne">Carne/Pescado</string>
     <string name="introlitros">Introduzca los libros bebidos</string>
+    <string name="alimentacion">Alimentación</string>
+    <string name="infogeneral">Se debe de llevar una vida sana comiendo todo lo que recomendamos en la apliación para de este modo lleven una vida más sana y puedan notar los cambios con nuestro programa de dietas</string>
 </resources>
