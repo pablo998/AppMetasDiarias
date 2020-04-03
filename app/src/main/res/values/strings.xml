@@ -47,4 +47,9 @@
     <string name="Otros">Otros</string>
     <string name="Zumos">Zumos</string>
     <string name="Agua">Agua</string>
+    <string name="infocomida">Se debe cumplir estas comidas diarias para conseguir las metas</string>
+    <string name="verdura">Verduras</string>
+    <string name="ensalada">Ensalada</string>
+    <string name="carne">Carne/Pescado</string>
+    <string name="introlitros">Introduzca los libros bebidos</string>
 </resources>
