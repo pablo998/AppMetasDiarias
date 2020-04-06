@@ -56,4 +56,7 @@
     <string name="infogeneral">Se debe de llevar una vida sana comiendo todo lo que recomendamos en la apliación para de este modo lleven una vida más sana y puedan notar los cambios con nuestro programa de dietas</string>
     <string name="infocaminar">Caminar es necesario para el cuerpo, ya que no debemos llevar una vvida sedentaria y para ello el cuerpo necesita hacer algun tipo de movimiento</string>
     <string name="introkm">Seleccione los kilometros que haya realizado</string>
+    <string name="infocorrer">Correr diariamente ayuda a tener una mayor resistencia, mejora las constantes cardiovascualres, mayor fuerza, agilidad...</string>
+    <string name="trote">Trote</string>
+    <string name="sprint">Sprint</string>
 </resources>
