@@ -10,7 +10,6 @@
     android:orientation="vertical">
 
 
-
     <ImageView
         android:id="@+id/blurryImage"
         android:layout_width="705dp"
@@ -21,6 +20,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/barraArriba"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/applogo" />
 
     <Button
@@ -34,150 +34,26 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <Button
-        android:id="@+id/menuOpcion1"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginTop="90dp"
-        android:layout_marginBottom="20dp"
+        android:id="@+id/fondosemiblanco"
+        android:layout_width="0dp"
+        android:layout_height="550dp"
+        android:layout_marginTop="20dp"
         android:alpha="0.9"
-        android:background="@color/Amarillo"
+        android:background="#DBD8C4C6"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="@color/Blanco"
         android:textSize="18sp"
-        android:onClick="onClickMenuOpcion1"
-        app:layout_constraintBottom_toTopOf="@+id/menuOpcion2"
+        app:layout_constraintBottom_toTopOf="@+id/barraAbajo"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/barraArriba" />
-
-    <TextView
-        android:id="@+id/opcion1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="52dp"
-        android:text="@string/menuFrutas"
-        android:textColor="@color/Blanco"
-        android:textSize="20sp"
-        android:translationZ="10dp"
-        app:layout_constraintBottom_toBottomOf="@+id/menuOpcion1"
-        app:layout_constraintStart_toEndOf="@+id/frutaimg"
-        app:layout_constraintTop_toTopOf="@+id/menuOpcion1"
-        app:layout_constraintVertical_bias="0.506" />
-
-    <ImageView
-        android:id="@+id/frutaimg"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="10dp"
-        android:translationZ="10dp"
-        app:layout_constraintBottom_toBottomOf="@+id/menuOpcion1"
-        app:layout_constraintTop_toTopOf="@+id/menuOpcion1"
-        app:srcCompat="@drawable/frutas"
-        tools:layout_editor_absoluteX="10dp"
-        tools:ignore="MissingConstraints" />
-
-
-    <Button
-        android:id="@+id/menuOpcion2"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"
-        android:alpha="0.8"
-        android:background="@color/Amarillo"
-        android:onClick="onClickMenuOpcion2"
-        app:layout_constraintBottom_toTopOf="@+id/menuOpcion3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/menuOpcion1" />
-
-    <TextView
-        android:id="@+id/opcion2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:text="@string/menuHidratacion"
-        android:textColor="@color/Blanco"
-        android:textSize="20sp"
-        android:translationZ="10dp"
-        app:layout_constraintBottom_toBottomOf="@+id/menuOpcion2"
-        app:layout_constraintStart_toEndOf="@+id/correrimg"
-        app:layout_constraintTop_toBottomOf="@+id/menuOpcion1"
-        app:layout_constraintVertical_bias="0.681" />
-
-    <ImageView
-        android:id="@+id/correrimg"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="10dp"
-
-        android:translationZ="10dp"
-        app:layout_constraintBottom_toBottomOf="@+id/menuOpcion2"
-        app:layout_constraintStart_toStartOf="@+id/menuOpcion2"
-        app:layout_constraintTop_toTopOf="@+id/menuOpcion2"
-        app:srcCompat="@drawable/hidra" />
-
-    <Button
-        android:id="@+id/menuOpcion3"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"
-        android:alpha="0.7"
-        android:background="@color/Amarillo"
-        android:onClick="onClickMenuOpcion3"
-        app:layout_constraintBottom_toTopOf="@+id/menuOpcion4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/menuOpcion2" />
-
-    <TextView
-        android:id="@+id/opcion3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:text="@string/menuComida"
-        android:textColor="@color/Blanco"
-        android:textSize="20sp"
-        android:translationZ="10dp"
-        app:layout_constraintBottom_toBottomOf="@+id/menuOpcion3"
-        app:layout_constraintStart_toEndOf="@+id/ejercimg"
-        app:layout_constraintTop_toBottomOf="@+id/menuOpcion2" />
-
-
-    <ImageView
-        android:id="@+id/ejercimg"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="16dp"
-
-        android:translationZ="10dp"
-        app:layout_constraintBottom_toBottomOf="@+id/menuOpcion3"
-        app:layout_constraintStart_toStartOf="@+id/menuOpcion3"
-        app:layout_constraintTop_toBottomOf="@+id/menuOpcion2"
-        app:layout_constraintVertical_bias="0.707"
-        app:srcCompat="@drawable/comidadiaria" />
-
-    <Button
-        android:id="@+id/informacionGeneral"
-        android:layout_width="249dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="81dp"
-        android:layout_marginTop="88dp"
-        android:layout_marginEnd="81dp"
-        android:background="@drawable/roundedbutton"
-        android:backgroundTint="@color/Amarillo"
-        android:text="@string/informacion"
-        android:onClick="onClickInfoGeneral"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ejercimg" />
+        app:layout_constraintTop_toBottomOf="@+id/barraArriba"
+        app:layout_constraintVertical_bias="0.288" />
 
     <RelativeLayout
+        android:id="@+id/relativeLayout"
         android:layout_width="410dp"
         android:layout_height="55dp"
         android:clickable="false"
@@ -190,9 +66,10 @@
             android:id="@+id/tituloScreen"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="120dp"
+            android:layout_marginStart="56dp"
             android:layout_marginTop="10dp"
-            android:text="@string/metasAlimentarias"
+            android:layout_toEndOf="@+id/appLogo"
+            android:text="@string/informacion"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textColor="@color/Blanco"
             android:textStyle="bold" />
@@ -311,4 +188,45 @@
 
 
     </RelativeLayout>
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="76dp"
+        android:text="@string/actvfisicas"
+        android:textColor="@color/Blanco"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:translationZ="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barraArriba" />
+
+    <ImageView
+        android:id="@+id/imaginfo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="20dp"
+        android:translationZ="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/titulo"
+        app:layout_constraintTop_toTopOf="@+id/fondosemiblanco"
+        app:srcCompat="@drawable/info" />
+
+    <TextView
+        android:id="@+id/textconlainfo"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="40dp"
+        android:text="@string/infogeneral_deporte"
+        android:textColor="@color/Negro"
+        android:textSize="20dp"
+        android:translationZ="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
