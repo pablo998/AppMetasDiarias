@@ -6,13 +6,13 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MetasAlimentacion extends AppCompatActivity {
+public class MetasDeportivas extends AppCompatActivity {
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.metasalimentarias);
+        setContentView(R.layout.metasdeportivas);
     }
 
     public void onClickAppLogo(View view){
@@ -21,21 +21,21 @@ public class MetasAlimentacion extends AppCompatActivity {
     }
 
     public void onClickMenuOpcion1 (View view){
-        Intent intent = new Intent(this, Frutas.class);
+        Intent intent = new Intent(this, Caminar.class);
         startActivity(intent);
     }
 
     public void onClickMenuOpcion2 (View view){
-        Intent intent = new Intent(this, Hidratacion.class);
+        Intent intent = new Intent(this, Correr.class);
         startActivity(intent);
     }
 
     public void onClickMenuOpcion3 (View view){
-        Intent intent = new Intent(this, ComidaDiaria.class);
+        Intent intent = new Intent(this, EjercicioVariado.class);
         startActivity(intent);
     }
     public void onClickInfoGeneral (View view){
-        Intent intent = new Intent(this, InfoGeneralAlimentacion.class);
+        Intent intent = new Intent(this, InfoGeneralDeporte.class);
         startActivity(intent);
     }
 }
