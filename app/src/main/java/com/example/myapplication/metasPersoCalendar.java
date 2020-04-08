@@ -6,6 +6,8 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.myapplication.MetasPersonalizadas.metasPersonalizadasResultsActivity;
+
 
 public class metasPersoCalendar extends AppCompatActivity {
 
@@ -19,4 +21,10 @@ public class metasPersoCalendar extends AppCompatActivity {
         Intent intent = new Intent(this, menuActivity.class);
         startActivity(intent);
     }
+
+    public void onObtenerResultadosPersonaliz(View view){
+        Intent intent = new Intent(this, metasPersonalizadasResultsActivity.class);
+        startActivity(intent);
+    }
+
 }

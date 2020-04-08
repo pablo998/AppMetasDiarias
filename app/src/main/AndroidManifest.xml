@@ -33,6 +33,8 @@
         <activity android:name=".metasPersoCalendar"></activity>
         <activity android:name=".recordatoriosListaActivity"></activity>
         <activity android:name=".recordatoriosAddActivity"></activity>
+        <activity android:name=".MetasPersonalizadas.metasPersonalizadasResultsActivity"></activity>
+
 
         <receiver
             android:name="com.example.myapplication.AlarmReceiver"
