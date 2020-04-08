@@ -59,4 +59,9 @@
     <string name="infocorrer">Correr diariamente ayuda a tener una mayor resistencia, mejora las constantes cardiovascualres, mayor fuerza, agilidad...</string>
     <string name="trote">Trote</string>
     <string name="sprint">Sprint</string>
+    <string name="sentadillas">Sentadillas</string>
+    <string name="flexiones">Flexiones</string>
+    <string name="zancadas">Zancadas</string>
+    <string name="infoejercicio">Gracias al ejercicio variado conseguimos activar el metabolismo, con lo que conseguiremos evitar la acumulación de grasas</string>
+    <string name="abd">Abdominales</string>
 </resources>
