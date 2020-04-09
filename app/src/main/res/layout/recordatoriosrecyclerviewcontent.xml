@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewLista"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:alpha="0.8"
+        app:cardBackgroundColor="@color/Amarillo">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutListaItem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/metaRecordatoriosLista"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/horaRecordatoriosLista"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="21dp"
+                android:textColor="@color/Negro"
+                android:translationZ="10dp"
+                tools:text="META" />
+
+            <Switch
+                android:id="@+id/switchRecordatorioLista"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="340dp"
+                android:layout_marginTop="40dp"
+                android:checked="false" />
+
+            <TextView
+                android:id="@+id/horaRecordatoriosLista"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="39dp"
+                android:layout_marginTop="32dp"
+                android:textColor="@color/Negro"
+                android:textSize="20sp"
+                android:translationZ="10dp"
+                tools:text="HORA" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+</LinearLayout>

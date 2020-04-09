@@ -9,64 +9,41 @@
     android:foregroundTint="#303233"
     android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scrollView2"></LinearLayout>
-
-    <ScrollView
-        android:id="@+id/scrollView2"
-        android:layout_width="match_parent"
-        android:layout_height="520dp"
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addAlarmaBoton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="320dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="35dp"
+        android:backgroundTint="@color/Naranja"
+        android:clickable="true"
+        android:focusable="auto"
+        android:onClick="onAñadirRecordatorio"
+        android:tint="@color/Blanco"
+        android:translationZ="10sp"
+        app:borderWidth="1.5dp"
         app:layout_constraintBottom_toTopOf="@+id/barraAbajo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/barraArriba"
-        app:layout_constraintVertical_bias="0.0">
+        app:srcCompat="@drawable/alarma" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <Button
-                android:id="@+id/change_notification"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="20dp"
-                android:gravity="center_horizontal"
-                android:text="@string/change_time"
-                android:textColor="@color/Negro"
-                android:textSize="30sp"
-                android:translationZ="10dp" />
-
-            <TextView
-                android:id="@+id/notifications_time"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="20dp"
-                android:gravity="center_horizontal"
-                android:textSize="30sp"
-                android:translationZ="10dp"
-                tools:text="12:00" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:text="@string/time_selected_is"
-                android:textSize="30sp"
-                android:translationZ="10dp" />
-        </LinearLayout>
-
-
-    </ScrollView>
+    <Button
+        android:id="@+id/infoLista"
+        android:layout_width="370dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/roundedbutton"
+        android:backgroundTint="@color/Amarillo"
+        android:clickable="false"
+        android:text="@string/listaLayoutInfo"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barraArriba" />
 
     <ImageView
         android:id="@+id/blurryImage"
@@ -92,6 +69,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <RelativeLayout
+        android:id="@+id/LayoutBarraArriba"
         android:layout_width="410dp"
         android:layout_height="55dp"
         android:clickable="false"
@@ -143,9 +121,11 @@
         android:background="@color/Negro"
         android:clickable="false"
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <RelativeLayout
+        android:id="@+id/LayoutBarraAbajo"
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:clickable="false"
@@ -153,7 +133,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/barraArriba"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" >
+        app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
             android:id="@+id/userNameLogo"
@@ -198,10 +178,10 @@
             android:id="@+id/nivelNumero"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_above="@+id/nivelEstrella"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_above="@+id/nivelEstrella"
             android:layout_marginTop="14dp"
             android:layout_marginEnd="40dp"
             android:layout_marginBottom="11dp"
@@ -224,6 +204,24 @@
             app:srcCompat="@drawable/estrella" />
 
     </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="474dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/barraAbajo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/infoLista">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerLista"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"></androidx.recyclerview.widget.RecyclerView>
+    </ScrollView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
