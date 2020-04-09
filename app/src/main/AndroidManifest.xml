@@ -9,6 +9,7 @@
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
     <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
     <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SET_ALARM" />
 
     <application
         android:allowBackup="true"
@@ -24,8 +25,25 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".PantallaLoginActivity">
-        </activity>
+        <activity android:name=".loginActivity"></activity>
+        <activity android:name=".registroActivity"></activity>
+        <activity android:name=".menuActivity"></activity>
+        <activity android:name=".recordatoriosMenuActivity"></activity>
+        <activity android:name=".metasPersoFormuActivity"></activity>
+        <activity android:name=".metasPersoCalendar"></activity>
+        <activity android:name=".ListaRecordatorios.recordatoriosListaActivity"></activity>
+        <activity android:name=".recordatoriosAddActivity"></activity>
+        <activity android:name=".MetasPersonalizadas.metasPersonalizadasResultsActivity"></activity>
+
+
+        <receiver
+            android:name="com.example.myapplication.AlarmReceiver"
+            android:enabled="true" />
+
+        <service
+            android:name="com.example.myapplication.NotificationService"
+            android:enabled="true" />
+
     </application>
 
 </manifest>
