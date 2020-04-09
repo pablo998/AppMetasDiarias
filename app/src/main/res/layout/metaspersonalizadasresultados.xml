@@ -21,18 +21,6 @@
         app:layout_constraintTop_toBottomOf="@+id/barraArriba"
         app:srcCompat="@drawable/applogo" />
 
-    <ImageView
-        android:id="@+id/signoMasImagen"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="20dp"
-        android:translationZ="10dp"
-        app:layout_constraintBottom_toBottomOf="@+id/botonAñadirRecordatorio"
-        app:layout_constraintEnd_toStartOf="@+id/SumarRecordatorioTextView"
-        app:layout_constraintStart_toStartOf="@+id/botonAñadirRecordatorio"
-        app:layout_constraintTop_toTopOf="@+id/botonAñadirRecordatorio"
-        app:srcCompat="@drawable/signomas" />
-
     <Button
         android:id="@+id/barraArriba"
         android:layout_width="412dp"
@@ -52,71 +40,6 @@
         android:clickable="false"
         app:layout_constraintBottom_toBottomOf="parent"
         tools:layout_editor_absoluteX="0dp" />
-
-    <Button
-        android:id="@+id/tituloMarcoFormulario"
-        android:layout_width="350dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="65dp"
-        android:layout_marginBottom="10dp"
-        android:background="@drawable/roundedbutton"
-        android:backgroundTint="@color/Amarillo"
-        android:clickable="false"
-        android:text="@string/metasPersoFormularioTxtTitulo"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textColor="@color/Negro"
-        android:textSize="18sp"
-        android:translationZ="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/fondoCuestionario"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/barraArriba" />
-
-    <Button
-        android:id="@+id/fondoCuestionario"
-        android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="40dp"
-        android:alpha="0.8"
-        android:background="@drawable/roundedbutton"
-        android:backgroundTint="@color/Amarillo"
-        app:layout_constraintBottom_toTopOf="@id/botonAñadirRecordatorio"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tituloMarcoFormulario" />
-
-    <TextView
-        android:id="@+id/notifications_time"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginEnd="20dp"
-        android:gravity="center_horizontal"
-        android:inputType="time"
-        android:textColor="@color/Negro"
-        android:textSize="20sp"
-        android:translationZ="10dp"
-        app:layout_constraintBottom_toBottomOf="@+id/fondoCuestionario"
-        app:layout_constraintEnd_toEndOf="@+id/fondoCuestionario"
-        app:layout_constraintStart_toEndOf="@+id/laHoraSeleccionaEsTextView"
-        app:layout_constraintTop_toBottomOf="@+id/change_notification"
-        tools:text="12:00" />
-
-    <TextView
-        android:id="@+id/laHoraSeleccionaEsTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginBottom="25dp"
-        android:text="@string/time_selected_is"
-        android:textColor="@color/Negro"
-        android:textSize="20sp"
-        android:translationZ="10dp"
-        app:layout_constraintBottom_toBottomOf="@+id/fondoCuestionario"
-        app:layout_constraintEnd_toStartOf="@id/notifications_time"
-        app:layout_constraintStart_toStartOf="parent" />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -211,9 +134,9 @@
             android:id="@+id/tituloScreen"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="120dp"
+            android:layout_marginStart="100dp"
             android:layout_marginTop="10dp"
-            android:text="@string/añadirRecordatorio"
+            android:text="@string/menuOpcion4"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textColor="@color/Blanco"
             android:textStyle="bold" />
@@ -241,73 +164,46 @@
             android:onClick="onClickAppLogo"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
     </RelativeLayout>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/LayoutDescripcionRecordatorio"
-        android:layout_width="290dp"
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabsMetasPerso"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="120dp"
-        android:textColorHint="@color/Blanco"
-        android:translationZ="10dp"
-        app:layout_constraintBottom_toBottomOf="@+id/fondoCuestionario"
+        android:layout_marginTop="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/viewpagerMetasPers"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/fondoCuestionario">
+        app:layout_constraintTop_toBottomOf="@+id/barraArriba">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/inputDescripcionRecordatorio"
-            android:layout_width="match_parent"
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/levelUpTab"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="@string/recordatorioHintDescripcion"
-            android:singleLine="true"
-            android:textColor="@color/Blanco"
-            android:translationZ="10dp" />
-    </com.google.android.material.textfield.TextInputLayout>
+            android:text="@string/tab1MetasPerso" />
 
-    <TextView
-        android:id="@+id/SumarRecordatorioTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:text="@string/sumarRecordatorioAListaBotonTexto"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="@color/Blanco"
-        android:textSize="20sp"
-        android:translationZ="10dp"
-        app:layout_constraintBottom_toBottomOf="@+id/botonAñadirRecordatorio"
-        app:layout_constraintStart_toEndOf="@id/signoMasImagen"
-        app:layout_constraintTop_toTopOf="@+id/botonAñadirRecordatorio" />
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/comidaTab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tab2MetasPerso" />
 
-    <Button
-        android:id="@+id/botonAñadirRecordatorio"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginBottom="50dp"
-        android:alpha="0.7"
-        android:background="@color/Amarillo"
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/deporteTab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tab3MetasPerso" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpagerMetasPers"
+        android:layout_width="412dp"
+        android:layout_height="552dp"
         app:layout_constraintBottom_toTopOf="@+id/barraAbajo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fondoCuestionario" />
-
-    <Button
-        android:id="@+id/change_notification"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:backgroundTint="@color/Rojo"
-        android:gravity="center_horizontal"
-        android:text="@string/change_time"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textColor="@color/Negro"
-        android:textSize="20sp"
-        android:translationZ="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/laHoraSeleccionaEsTextView"
-        app:layout_constraintEnd_toEndOf="@+id/fondoCuestionario"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/LayoutDescripcionRecordatorio" />
+        app:layout_constraintTop_toBottomOf="@+id/tabsMetasPerso" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
