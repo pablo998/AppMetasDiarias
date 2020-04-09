@@ -16,8 +16,6 @@ import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
-import com.example.myapplication.R;
-
 import java.util.Calendar;
 
 public class recordatoriosAddActivity extends AppCompatActivity {

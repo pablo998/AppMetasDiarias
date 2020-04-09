@@ -1,7 +1,9 @@
 package com.example.myapplication.MetasPersonalizadas;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
@@ -10,6 +12,7 @@ import com.example.myapplication.MetasPersonalizadas.Tab1.Tab1Fragment;
 import com.example.myapplication.MetasPersonalizadas.Tab2.Tab2Fragment;
 import com.example.myapplication.MetasPersonalizadas.Tab3.Tab3Fragment;
 import com.example.myapplication.R;
+import com.example.myapplication.menuActivity;
 import com.google.android.material.tabs.TabLayout;
 
 public class metasPersonalizadasResultsActivity extends AppCompatActivity {
@@ -45,4 +48,8 @@ public class metasPersonalizadasResultsActivity extends AppCompatActivity {
         viewPager.setAdapter(adapter);
     }
 
+    public void onClickAppLogo(View view){
+        Intent intent = new Intent(this, menuActivity.class);
+        startActivity(intent);
+    }
 }

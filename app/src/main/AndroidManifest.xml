@@ -31,7 +31,7 @@
         <activity android:name=".recordatoriosMenuActivity"></activity>
         <activity android:name=".metasPersoFormuActivity"></activity>
         <activity android:name=".metasPersoCalendar"></activity>
-        <activity android:name=".recordatoriosListaActivity"></activity>
+        <activity android:name=".ListaRecordatorios.recordatoriosListaActivity"></activity>
         <activity android:name=".recordatoriosAddActivity"></activity>
         <activity android:name=".MetasPersonalizadas.metasPersonalizadasResultsActivity"></activity>
 

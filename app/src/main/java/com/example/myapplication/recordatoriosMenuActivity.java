@@ -1,10 +1,11 @@
 package com.example.myapplication;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.myapplication.ListaRecordatorios.recordatoriosListaActivity;
 
 
 public class recordatoriosMenuActivity extends AppCompatActivity {
