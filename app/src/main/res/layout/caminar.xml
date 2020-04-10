@@ -9,41 +9,6 @@
     android:foregroundTint="#303233"
     android:orientation="vertical">
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/addAlarmaBoton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="320dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginBottom="35dp"
-        android:backgroundTint="@color/Rojo"
-        android:clickable="true"
-        android:focusable="auto"
-        android:onClick="onAñadirRecordatorio"
-        android:tint="@color/Blanco"
-        android:translationZ="10sp"
-        app:borderWidth="1.5dp"
-        app:layout_constraintBottom_toTopOf="@+id/barraAbajo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/alarma" />
-
-    <Button
-        android:id="@+id/infoLista"
-        android:layout_width="370dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="45dp"
-        android:layout_marginBottom="20dp"
-        android:background="@drawable/roundedbutton"
-        android:backgroundTint="@color/Amarillo"
-        android:clickable="false"
-        android:text="@string/listaLayoutInfo"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/barraArriba" />
 
     <ImageView
         android:id="@+id/blurryImage"
@@ -55,6 +20,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/barraArriba"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/applogo" />
 
     <Button
@@ -68,8 +34,69 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
+    <Button
+        android:id="@+id/fondosemiblanco"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:alpha="0.9"
+        android:background="#DBD8C4C6"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/Blanco"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/barraAbajo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barraArriba"
+        app:layout_constraintVertical_bias="0.395" />
+
+
+    <TextView
+        android:id="@+id/opcion1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="-10dp"
+        android:text="@string/menuCaminar"
+        android:textColor="@color/Negro"
+        android:textSize="20sp"
+        android:translationZ="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/fondosemiblanco"
+        app:layout_constraintEnd_toStartOf="@+id/contador1"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toEndOf="@+id/imag1"
+        app:layout_constraintTop_toTopOf="@+id/fondosemiblanco"
+        app:layout_constraintVertical_bias="0.451" />
+
+    <ImageView
+        android:id="@+id/imag1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:translationZ="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/fondosemiblanco"
+        app:layout_constraintTop_toTopOf="@+id/fondosemiblanco"
+        app:layout_constraintVertical_bias="0.433"
+        app:srcCompat="@drawable/caminar"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/introduzca"
+        android:layout_width="252dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/roundedbutton"
+        android:backgroundTint="@color/Amarillo"
+        android:text="@string/introkm"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fondosemiblanco" />
+
     <RelativeLayout
-        android:id="@+id/LayoutBarraArriba"
+        android:id="@+id/relativeLayout"
         android:layout_width="410dp"
         android:layout_height="55dp"
         android:clickable="false"
@@ -82,9 +109,9 @@
             android:id="@+id/tituloScreen"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="185dp"
+            android:layout_marginStart="170dp"
             android:layout_marginTop="10dp"
-            android:text="@string/listaWord"
+            android:text="@string/menuCaminar"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textColor="@color/Blanco"
             android:textStyle="bold" />
@@ -109,7 +136,6 @@
             android:layout_marginTop="5dp"
             android:alpha="0.2"
             android:background="@drawable/roundedbutton"
-            android:onClick="onClickAppLogo"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
     </RelativeLayout>
@@ -121,11 +147,9 @@
         android:background="@color/Negro"
         android:clickable="false"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        tools:layout_editor_absoluteX="0dp" />
 
     <RelativeLayout
-        android:id="@+id/LayoutBarraAbajo"
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:clickable="false"
@@ -133,7 +157,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/barraArriba"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent" >
 
         <ImageView
             android:id="@+id/userNameLogo"
@@ -203,25 +227,111 @@
             android:contentDescription="@string/nivelEstrellaDescription"
             app:srcCompat="@drawable/estrella" />
 
+
+
     </RelativeLayout>
 
-    <ScrollView
-        android:id="@+id/scrollView2"
-        android:layout_width="match_parent"
-        android:layout_height="474dp"
-        android:layout_marginTop="20dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/barraAbajo"
+    <Button
+        android:id="@+id/infog"
+        android:layout_width="433dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="55dp"
+
+        android:background="@color/Blanco"
+
+        app:layout_constraintBottom_toTopOf="@+id/menuOpcion1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/infoLista">
+        app:layout_constraintTop_toTopOf="@+id/barraArriba"
+        app:layout_constraintVertical_bias="0.0" />
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerLista"
-            android:layout_width="match_parent"
+    <ImageView
+        android:id="@+id/imaginfogeneral"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:translationZ="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barraArriba"
+        app:srcCompat="@drawable/info" />
+
+    <Button
+        android:id="@+id/contador1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="188dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/roundedbutton"
+        android:backgroundTint="@color/Amarillo"
+        android:text="@string/contador1"
+        app:layout_constraintStart_toEndOf="@+id/imag1"
+        app:layout_constraintTop_toTopOf="@+id/fondosemiblanco" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="140dp"
+        android:background="@color/Amarillo"
+        app:layout_constraintStart_toEndOf="@+id/contador1"
+        app:layout_constraintTop_toBottomOf="@+id/infog" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:background="#A02C2C"
+        app:layout_constraintBottom_toTopOf="@+id/barraAbajo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fondosemiblanco"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageView
+            android:id="@+id/levelUp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="23dp"
+            app:srcCompat="@drawable/level" />
+
+        <TextView
+            android:id="@+id/textLevelUp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"></androidx.recyclerview.widget.RecyclerView>
-    </ScrollView>
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginEnd="30dp"
+            android:layout_toEndOf="@+id/levelUp"
+            android:text="@string/textoLevelUp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:typeface="normal" />
+    </RelativeLayout>
 
+    <TextView
+        android:id="@+id/textinfogeneral"
+        android:layout_width="280dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+
+        android:layout_marginEnd="10dp"
+        android:text="@string/infocaminar"
+        android:textAlignment="center"
+        android:textColor="@color/Negro"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:translationZ="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imaginfogeneral"
+        app:layout_constraintTop_toBottomOf="@+id/barraArriba" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

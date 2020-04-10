@@ -36,4 +36,153 @@
     <string name="menuCorrer">Correr</string>
     <string name="menuEjercicio">Ejercicio variado</string>
     <string name="metasDeportivas">Metas deportivas</string>
+    <string name="Frutas">Frutas</string>
+    <string name="InfoFrutas">La fruta es buena para...</string>
+    <string name="contador1">3</string>
+    <string name="Platanos">Plátanos</string>
+    <string name="Manzanas">Manzanas</string>
+    <string name="Naranjas">Naranjas</string>
+    <string name="textoLevelUp">Explicar las metas y métodos de obtencion de puntos, aumento de metas....</string>
+    <string name="infohidra">El cuerpo humano necesita de liquidos para un correcto funcionamiento</string>
+    <string name="Otros">Otros</string>
+    <string name="Zumos">Zumos</string>
+    <string name="Agua">Agua</string>
+    <string name="infocomida">Se debe cumplir estas comidas diarias para conseguir las metas</string>
+    <string name="verdura">Verduras</string>
+    <string name="ensalada">Ensalada</string>
+    <string name="carne">Carne/Pescado</string>
+    <string name="introlitros">Introduzca los libros bebidos</string>
+    <string name="alimentacion">Alimentación</string>
+    <string name="infogeneral">Se debe de llevar una vida sana comiendo todo lo que recomendamos en la apliación para de este modo lleven una vida más sana y puedan notar los cambios con nuestro programa de dietas</string>
+    <string name="infocaminar">Caminar es necesario para el cuerpo, ya que no debemos llevar una vvida sedentaria y para ello el cuerpo necesita hacer algun tipo de movimiento</string>
+    <string name="introkm">Seleccione los kilometros que haya realizado</string>
+    <string name="infocorrer">Correr diariamente ayuda a tener una mayor resistencia, mejora las constantes cardiovascualres, mayor fuerza, agilidad...</string>
+    <string name="trote">Trote</string>
+    <string name="sprint">Sprint</string>
+    <string name="sentadillas">Sentadillas</string>
+    <string name="flexiones">Flexiones</string>
+    <string name="zancadas">Zancadas</string>
+    <string name="infoejercicio">Gracias al ejercicio variado conseguimos activar el metabolismo, con lo que conseguiremos evitar la acumulación de grasas</string>
+    <string name="abd">Abdominales</string>
+    <string name="actvfisicas">Actividades físicas</string>
+    <string name="infogeneral_deporte">Para llevar una vida más sana y cumplir los objetivos que nos hemos marcado, debemos de realizar todas estas actividades físicas ya que si queremos notar el cambio solo con la dieta no basta.</string>
+    <string name="tipoFruta">Platanos</string>
+
+
+    <string name="menuItemAppLogo">appLogo</string>
+    <string name="perfilLogo">perfilLogo</string>
+    <string name="estrellaBottomBar">estrellaBottomBar</string>
+
+    <string name="obtenerMetasPersonalizadas">Obtener metas personalizadas</string>
+    <string name="metasPersoFormularioTxtTitulo">Introduzca los siguientes parámetros</string>
+    <string name="pesoHint">Peso en kg</string>
+    <string name="alturaHint">Altura en cm</string>
+    <string name="metasPersoCalendarClique">Clique en el día del mes \npara ver las metas personalizadas</string>
+    <string name="caledarioWord">CALENDARIO</string>
+    <string name="listaWord">Lista</string>
+    <string name="añadirRecordatorio">Añadir recordatorio</string>
+    <string name="recordatorioHintDescripcion">Descripción del recordatorio</string>
+    <string name="sumarRecordatorioAListaBotonTexto">Sumar recordatorio a la lista</string>
+    <string name="listaLayoutInfo">Descripción del recordatorio y hora establecida</string>
+    <string name="metasPropuestasDiaX">Metas propuestas del día X</string>
+
+    <string name="MetodoOptencionPuntos">Método de obtención de puntos</string>
+    <string name="MetodoOptencionPuntosExplanation">Método de obtención de puntos explicación</string>
+    <string name="tab1MetasPerso">Level Up</string>
+    <string name="tab2MetasPerso">Comida</string>
+    <string name="tab3MetasPerso">Deporte</string>
+    <string name="metasComidaDiaX">Metas propuestas de Comida del día X</string>
+    <string name="metasEjercicioDiaX">Metas propuestas de Ejercicio del día X</string>
+    <string name="tab2MetasPersoInfoBoton">Vaya marcando las metas que haya completado</string>
+    <string name="progresoWord">Progreso</string>
+    <string name="aquíVaMeta">*Aquí va meta*</string>
+    <string name="aquíVaHora">*Aquí va hora*</string>
+
+    <string name="facebookLogoDescription">Logo de Facebook para indicar que se comparte en Twitter</string>
+    <string name="userLogoDescription">Logo de usuario por defecto para todos los usuarios de la App</string>
+    <string name="nivelEstrellaDescription">Estrella en la que se ve el nivel actual del usuario</string>
+    <string name="aroNegroDescription">Aro para el borde donde va a ir el número de la opción del menú</string>
+    <string name="verListaDescription">Imagen de ver la lista de los recordatorios creados</string>
+    <string name="addRecordatorioDescription">Imagen de añadir recordatorio a la lista</string>
+    <string name="obtenerMetasPersoDescription">Imagen de obtener mis metas personalizadas</string>
+    <string name="imagenSignoMasDescripcion">Signo más que indica que se añadirá un recordatorio a la lista</string>
+
+    <string name="recordatorio1Title">Recordatorio1</string>
+    <string name="recordatorio2Title">Recordatorio2</string>
+    <string name="recordatorio3Title">Recordatorio3</string>
+    <string name="recordatorio4Title">Recordatorio4</string>
+    <string name="recordatorio5Title">Recordatorio5</string>
+    <string name="recordatorio6Title">Recordatorio6</string>
+    <string name="recordatorio7Title">Recordatorio7</string>
+    <string name="recordatorio8Title">Recordatorio8</string>
+    <string name="recordatorio9Title">Recordatorio9</string>
+
+
+
+
+
+    <string name="userName">userName</string> //cambiar, con intents cogiendo parte del email
+    <string name="userLevel">1</string> //cambiar, dependiendo de los puntos que vaya consiguiendo con métodos y variables
+    en Modelo (de MVP).
+
+
+    <string name="changed_to">Notificación cambiada a las %s</string>
+    <string name="time_selected_is">La hora seleccionada es:</string>
+    <string name="change_time">Establecer Alarma</string>
+    <string name="select_time">Selecciona la hora</string>
+    <string name="new_notification">Nueva notificación</string>
+
+    <string-array name="sexo">
+        <item>Sexo</item>
+        <item>Hombre</item>
+        <item>Mujer</item>
+    </string-array>
+
+    <string-array name="añosNacimiento">
+        <item>Año nacimiento</item>
+        <item>2012</item><item>2011</item><item>2010</item><item>2009</item><item>2008</item><item>2007</item>
+        <item>2006</item><item>2005</item><item>2004</item><item>2003</item><item>2002</item><item>2001</item>
+        <item>2002</item><item>2001</item><item>2000</item><item>1999</item><item>1998</item><item>1997</item>
+        <item>1996</item><item>1995</item><item>1994</item><item>1993</item><item>1992</item><item>1991</item>
+        <item>1991+</item>
+    </string-array>
+
+    <string-array name="mesesDelAño">
+        <item>Mes de la meta</item>
+        <item>Enero</item><item>Febrero</item><item>Marzo</item><item>Abril</item><item>Mayo</item><item>Junio</item>
+        <item>Julio</item><item>Agosto</item><item>Septiembre</item><item>Octubre</item><item>Noviembre</item>
+        <item>Diciembre</item>
+    </string-array>
+
+    <string-array name="diaDelMes">
+        <item>Día de la meta</item>
+        <item>1</item><item>2</item><item>3</item><item>4</item><item>5</item><item>6</item>
+        <item>7</item><item>8</item><item>9</item><item>10</item><item>11</item><item>12</item>
+        <item>13</item><item>14</item><item>15</item><item>16</item><item>17</item>
+        <item>18</item><item>19</item><item>20</item><item>21</item><item>22</item>
+        <item>23</item><item>24</item><item>25</item><item>26</item><item>27</item><item>28</item><item>29</item>
+        <item>30</item><item>31</item>
+    </string-array>
+
+    <string name="calendardia1">1</string><string name="calendardia2">2</string><string name="calendardia3">3</string>
+    <string name="calendardia4">4</string><string name="calendardia5">5</string><string name="calendardia6">6</string>
+    <string name="calendardia7">7</string><string name="calendardia8">8</string><string name="calendardia9">9</string>
+    <string name="calendardia10">10</string><string name="calendardia11">11</string><string name="calendardia12">12</string>
+    <string name="calendardia13">13</string><string name="calendardia14">14</string><string name="calendardia15">15</string>
+    <string name="calendardia16">16</string><string name="calendardia17">17</string><string name="calendardia18">18</string>
+    <string name="calendardia19">19</string><string name="calendardia20">20</string><string name="calendardia21">21</string>
+    <string name="calendardia22">22</string><string name="calendardia23">23</string><string name="calendardia24">24</string>
+    <string name="calendardia25">25</string><string name="calendardia26">26</string><string name="calendardia27">27</string>
+    <string name="calendardia28">28</string><string name="calendardia29">29</string><string name="calendardia30">30</string>
+    <string name="calendardia31">31</string>
+
+    <string name="mesCalendar">Mes</string>
+    <string name="calendarEnero">Enero</string><string name="calendarFebrero">Febrero</string>
+    <string name="calendarMarzo">Marzo</string><string name="calendarAbril">Abril</string>
+    <string name="calendarMayo">Mayo</string><string name="calendarJunio">Junio</string>
+    <string name="calendarJulio">Julio</string><string name="calendarAgosto">Agosto</string>
+    <string name="calendarSeptiembre">Septiembre</string><string name="calendarOctubre">Octubre</string>
+    <string name="calendarNoviembre">Noviembre</string><string name="calendarDiciembre">Diciembre</string>
+
+
 </resources>
