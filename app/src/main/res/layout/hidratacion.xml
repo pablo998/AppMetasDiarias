@@ -78,6 +78,8 @@
         app:layout_constraintVertical_bias="0.065"
         app:srcCompat="@drawable/agua2"
         tools:ignore="MissingConstraints"
+        android:contentDescription="@string/menuHidratacion"
+
         tools:layout_editor_absoluteX="16dp" />
 
     <TextView
@@ -98,7 +100,7 @@
         android:id="@+id/imag2"
         android:layout_width="80dp"
         android:layout_height="80dp"
-
+        android:contentDescription="@string/Agua"
         android:layout_marginStart="16dp"
         android:layout_marginTop="20dp"
         android:translationZ="10dp"
@@ -123,6 +125,7 @@
         android:id="@+id/imag3"
         android:layout_width="80dp"
         android:layout_height="80dp"
+        android:contentDescription="@string/Agua"
 
         android:layout_marginStart="16dp"
         android:layout_marginTop="20dp"
@@ -289,10 +292,7 @@
         android:layout_width="433dp"
         android:layout_height="100dp"
         android:layout_marginTop="55dp"
-
         android:background="@color/Blanco"
-
-        app:layout_constraintBottom_toTopOf="@+id/menuOpcion1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/barraArriba"
@@ -306,6 +306,7 @@
         android:layout_marginTop="10dp"
         android:translationZ="10dp"
         app:layout_constraintStart_toStartOf="parent"
+        android:contentDescription="@string/infogeneral"
         app:layout_constraintTop_toBottomOf="@+id/barraArriba"
         app:srcCompat="@drawable/hidra" />
 
@@ -391,6 +392,8 @@
             android:layout_alignParentTop="true"
             android:layout_marginStart="21dp"
             android:layout_marginTop="23dp"
+            android:contentDescription="@string/userLevel"
+
             app:srcCompat="@drawable/level" />
 
         <TextView
@@ -415,7 +418,6 @@
         android:layout_height="66dp"
         android:layout_marginStart="12dp"
         android:layout_marginTop="16dp"
-
         android:text="@string/infohidra"
         android:textAlignment="center"
         android:textColor="@color/Negro"

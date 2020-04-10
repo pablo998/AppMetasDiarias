@@ -69,12 +69,12 @@
         android:id="@+id/frutaimg"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:layout_marginStart="10dp"
         android:translationZ="10dp"
         app:layout_constraintBottom_toBottomOf="@+id/menuOpcion1"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/menuOpcion1"
+        android:contentDescription="@string/Frutas"
         app:srcCompat="@drawable/frutas"
-        tools:layout_editor_absoluteX="10dp"
         tools:ignore="MissingConstraints" />
 
 
@@ -111,11 +111,11 @@
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginStart="10dp"
-
         android:translationZ="10dp"
         app:layout_constraintBottom_toBottomOf="@+id/menuOpcion2"
         app:layout_constraintStart_toStartOf="@+id/menuOpcion2"
         app:layout_constraintTop_toTopOf="@+id/menuOpcion2"
+        android:contentDescription="@string/menuCorrer"
         app:srcCompat="@drawable/hidra" />
 
     <Button
@@ -127,7 +127,6 @@
         android:alpha="0.7"
         android:background="@color/Amarillo"
         android:onClick="onClickMenuOpcion3"
-        app:layout_constraintBottom_toTopOf="@+id/menuOpcion4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/menuOpcion2" />
@@ -151,12 +150,12 @@
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginStart="16dp"
-
         android:translationZ="10dp"
         app:layout_constraintBottom_toBottomOf="@+id/menuOpcion3"
         app:layout_constraintStart_toStartOf="@+id/menuOpcion3"
         app:layout_constraintTop_toBottomOf="@+id/menuOpcion2"
         app:layout_constraintVertical_bias="0.707"
+        android:contentDescription="@string/menuEjercicio"
         app:srcCompat="@drawable/comidadiaria" />
 
     <Button
