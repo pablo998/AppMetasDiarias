@@ -9,6 +9,8 @@
     android:foregroundTint="#303233"
     android:orientation="vertical">
 
+    <include layout="@layout/appbar"></include>
+
     <ImageView
         android:id="@+id/blurryImage"
         android:layout_width="705dp"
@@ -18,7 +20,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/barraArriba"
         app:srcCompat="@drawable/applogo" />
 
     <ImageView
@@ -35,64 +36,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/userlogo" />
-
-    <Button
-        android:id="@+id/barraArriba"
-        android:layout_width="412dp"
-        android:layout_height="55dp"
-        android:background="@color/Negro"
-        android:clickable="false"
-        android:translationZ="-10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <RelativeLayout
-        android:layout_width="410dp"
-        android:layout_height="55dp"
-        android:clickable="false"
-        android:translationZ="10dp"
-        app:layout_constraintEnd_toEndOf="@+id/barraArriba"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <ImageView
-            android:id="@+id/appLogo"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="5dp"
-            android:contentDescription="@string/logoDescripcion"
-            android:translationZ="10dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/applogo" />
-
-        <TextView
-            android:id="@+id/tituloScreen"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="150dp"
-            android:layout_marginTop="15dp"
-            android:text="@string/registrarme"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:textColor="@color/Blanco"
-            android:textStyle="bold"
-            android:translationZ="10dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <Button
-            android:id="@+id/botonLogo"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="5dp"
-            android:alpha="0.2"
-            android:background="@drawable/roundedbutton"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-    </RelativeLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/InputEmailLayout"
