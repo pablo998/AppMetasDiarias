@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/item1"
+        android:icon="@drawable/userlogo2"
+        android:onClick="onOptionsItemSelected"
+        android:title="@string/perfilLogo"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/itemespacio6"
+        android:icon="@color/Transparente"
+        android:title="@string/estrellaBottomBar"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/itemespacio5"
+        android:icon="@color/Transparente"
+        android:title="@string/estrellaBottomBar"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/itemespacio4"
+        android:icon="@color/Transparente"
+        android:title="@string/estrellaBottomBar"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/itemespacio3"
+        android:icon="@color/Transparente"
+        android:title="@string/estrellaBottomBar"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/itemespacio2"
+        android:icon="@color/Transparente"
+        android:title="@string/estrellaBottomBar"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/itemespacio1"
+        android:icon="@color/Transparente"
+        android:title="@string/estrellaBottomBar"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/item2"
+        android:icon="@drawable/ic_star"
+        android:onClick="onOptionsItemSelected"
+        android:title="@string/estrellaBottomBar"
+        app:showAsAction="always" />
+
+
+
+</menu>

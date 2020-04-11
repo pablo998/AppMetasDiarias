@@ -2,12 +2,17 @@ package com.example.myapplication;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Spinner;
+import android.widget.TextView;
+
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
@@ -26,10 +31,22 @@ public class registroActivity extends AppCompatActivity {
     Spinner añoNacimiento;
     Button registrarmeButton;
 
+    Toolbar toolbar;
+    TextView tituloLayout;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.registro);
+
+        toolbar = findViewById(R.id.myToolBar);
+        setSupportActionBar(toolbar);
+        tituloLayout = toolbar.findViewById(R.id.toolbar_title);
+
+        setSupportActionBar(toolbar);
+        tituloLayout.setText(R.string.registrarme);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
 
         blurryImage = findViewById(R.id.blurryImage);
         userLogo = findViewById(R.id.userLogo);

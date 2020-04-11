@@ -1,5 +1,22 @@
 <resources>
     <string name="app_name">AppMetasDiarias</string>
+
+    <string name="menuItemAppLogo">appLogo</string>
+    <string name="perfilLogo">perfilLogo</string>
+    <string name="estrellaBottomBar">estrellaBottomBar</string>
+
+    <string name="email">Email:</string>
+    <string name="sexo">Sexo:</string>
+    <string name="edad">Edad:</string>
+    <string name="perfilPalabra">Perfil</string>
+    <string name="nivelX">Nivel X</string>
+    <string name="nivelLayout">Nivel</string>
+    <string name="cerrarSesion">Cerrar Sesión</string>
+
+
+
+
+
     <string name="nombreAppMayus">METAS \nDIARIAS</string>
     <string name="toquePantalla">Toque la pantalla para continuar</string>
     <string name="logoDescripcion">Este es el Logo de la aplicacion</string>

@@ -1,6 +1,7 @@
 package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.app.AlarmManager;
 import android.app.PendingIntent;
@@ -10,11 +11,16 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
+
+import com.google.android.material.bottomappbar.BottomAppBar;
 
 import java.util.Calendar;
 
@@ -25,11 +31,24 @@ public class recordatoriosAddActivity extends AppCompatActivity {
     private SharedPreferences settings;
     Button añadirRecordatorioBoton;
 
+    Toolbar toolbar;
+    TextView tituloLayout;
+    BottomAppBar bottomAppBar;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.recordatoriosaddnuevo);
+        setUpBottomAppBar();
 
+        toolbar = findViewById(R.id.myToolBar);
+        setSupportActionBar(toolbar);
+        tituloLayout = toolbar.findViewById(R.id.toolbar_title);
+
+        setSupportActionBar(toolbar);
+        tituloLayout.setText(R.string.añadirRecordatorio);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
         settings = getSharedPreferences(getString(R.string.app_name), Context.MODE_PRIVATE);
 
         String hour, minute;
@@ -92,9 +111,38 @@ public class recordatoriosAddActivity extends AppCompatActivity {
         });
     }
 
-    public void onClickAppLogo(View view){
-        Intent intent = new Intent(this, menuActivity.class);
-        startActivity(intent);
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu){
+        MenuInflater inflater=getMenuInflater();
+        inflater.inflate(R.menu.menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == R.id.item1) {
+            Intent i = new Intent(this, perfilActivity.class);
+            startActivity(i);
+            return true;
+        } else if (item.getItemId() == R.id.item2) {
+            Intent i = new Intent(this, nivelActivity.class);
+            startActivity(i);
+            return true;
+        } else {
+            Intent i = new Intent(this, menuActivity.class);
+            startActivity(i);
+            return true;
+        }
+    }
+
+    private void setUpBottomAppBar() {
+        //find id
+        bottomAppBar = findViewById(R.id.bottomAppBar);
+
+        //set bottom bar to Action bar as it is similar like Toolbar
+        bottomAppBar.replaceMenu(R.menu.menubottombar);
     }
 
     private static void setAlarm(int i, Long timestamp, Context ctx) {

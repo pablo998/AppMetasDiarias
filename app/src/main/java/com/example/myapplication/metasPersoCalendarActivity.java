@@ -11,12 +11,11 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-import com.example.myapplication.ListaRecordatorios.recordatoriosListaActivity;
+import com.example.myapplication.MetasPersonalizadas.metasPersonalizadasResultsActivity;
 import com.google.android.material.bottomappbar.BottomAppBar;
 
 
-public class recordatoriosMenuActivity extends AppCompatActivity {
-
+public class metasPersoCalendarActivity extends AppCompatActivity {
 
     Toolbar toolbar;
     TextView tituloLayout;
@@ -26,7 +25,7 @@ public class recordatoriosMenuActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.recordatoriosmenu);
+        setContentView(R.layout.metaspersonalizadascalendar);
         setUpBottomAppBar();
 
         toolbar = findViewById(R.id.myToolBar);
@@ -34,19 +33,16 @@ public class recordatoriosMenuActivity extends AppCompatActivity {
         tituloLayout = toolbar.findViewById(R.id.toolbar_title);
 
         setSupportActionBar(toolbar);
-        tituloLayout.setText(R.string.recordatoriosPalabra);
+        tituloLayout.setText(R.string.menuOpcion4);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
     }
 
 
-    public void onClickVerListaOpcion(View view){
-        Intent intent = new Intent(this, recordatoriosListaActivity.class);
-        startActivity(intent);
-    }
-
-    public void onAñadirRecordatorio(View view){
-        Intent intent = new Intent(this, recordatoriosAddActivity.class);
-        startActivity(intent);
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu){
+        MenuInflater inflater=getMenuInflater();
+        inflater.inflate(R.menu.menu, menu);
+        return true;
     }
 
     @Override
@@ -74,13 +70,9 @@ public class recordatoriosMenuActivity extends AppCompatActivity {
         bottomAppBar.replaceMenu(R.menu.menubottombar);
     }
 
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu){
-        MenuInflater inflater=getMenuInflater();
-        inflater.inflate(R.menu.menu, menu);
-        return true;
+    public void onObtenerResultadosPersonaliz(View view){
+        Intent intent = new Intent(this, metasPersonalizadasResultsActivity.class);
+        startActivity(intent);
     }
 
 }
-
