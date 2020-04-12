@@ -8,7 +8,6 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.myapplication.MetasPersonalizadas.Tab2.ComidaItems;
 import com.example.myapplication.R;
 
 import java.util.ArrayList;
@@ -33,7 +32,7 @@ public class Tab3Adapter
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(context)
-                .inflate(R.layout.metapersonalizadastab3recyclerviewcontent, parent, false);
+                .inflate(R.layout.metastab2recyclerviewcontent, parent, false);
         return new ViewHolder(view);
     }
 
@@ -57,7 +56,7 @@ public class Tab3Adapter
 
         ViewHolder(View view) {
             super(view);
-            textView = view.findViewById(R.id.metaEjercicioPerso);
+            textView = view.findViewById(R.id.textContentRecycler);
 
         }
     }

@@ -1,5 +1,66 @@
 <resources>
     <string name="app_name">AppMetasDiarias</string>
+
+    <string name="menuItemAppLogo">appLogo</string>
+    <string name="perfilLogo">perfilLogo</string>
+    <string name="estrellaBottomBar">estrellaBottomBar</string>
+
+    <string name="email">Email:</string>
+    <string name="sexo">Sexo:</string>
+    <string name="edad">Edad:</string>
+    <string name="perfilPalabra">Perfil</string>
+    <string name="nivelX">Nivel X</string>
+    <string name="nivelLayout">Nivel</string>
+    <string name="cerrarSesion">Cerrar Sesión</string>
+
+
+    <string name="alimentacionPalabra">Alimentación</string>
+    <string name="actividadesFisicasPalabras">Actividades Físicas</string>
+
+    <string name="metasPropFruta">Metas propuestas de Fruta</string>
+    <string name="metasPropComidDia">Metas propuestas de Comidas Diarias</string>
+    <string name="metasPropCaminar">Metas propuestas sobre Caminar</string>
+    <string name="metasPropCorrer">Metas propuestas sobre Correr</string>
+    <string name="metasPropEjerVar">Metas propuestas sobre Ejercicio Variado</string>
+
+
+
+
+    <string name="frutasPalabra">Frutas</string>
+    <string name="hidratacionPalabra">Hidratación</string>
+    <string name="comidaDiaria">Comida Diaria</string>
+    <string name="comidasDiariasWords">Comidas Diarias</string>
+    <string name="infoGeneralPalabras">Información General</string>
+    <string name="infoPalabra">Información</string>
+    <string name="infoFruta">Información sobre la Fruta</string>
+    <string name="infoComidDia">Información sobre las principales Comidas Diarias</string>
+    <string name="infoCaminar">Información sobre Caminar</string>
+    <string name="infoEjerVar">Información sobre Ejercicio Variado</string>
+    <string name="infoCorrer">Información sobre Correr</string>
+    <string name="infoHidrata">Información sobre la Hidratación</string>
+    <string name="queAportaFruta">¿Qué nos aporta la Fruta?</string>
+    <string name="queAportaHidrata">¿Qué nos aporta la Hidratación?</string>
+    <string name="queAportaEjerfiVar">¿Qué nos aporta el Ejercicio físico Variado?</string>
+    <string name="queAportaCaminar">¿Qué nos aporta Caminar?</string>
+    <string name="queAportaCorrer">¿Qué nos aporta Correr?</string>
+    <string name="queAportaComidDia">¿Qué nos aportan las principales Comidas Diarias?</string>
+
+
+
+    <string name="metasAlimentariasPalabras">Metas alimentarias</string>
+
+    <string name="caminarPalabra">Caminar</string>
+    <string name="correrPalabra">Correr</string>
+    <string name="ejercicioVariadoPalabras">Ejercicio variado</string>
+    <string name="metasDeportivasPalabras">Metas deportivas</string>
+
+    <string name="metasHidrata">Metas propuestas de Hidratación</string>
+    <string name="bebidasPalabra">Bebidas</string>
+
+
+
+
+
     <string name="nombreAppMayus">METAS \nDIARIAS</string>
     <string name="toquePantalla">Toque la pantalla para continuar</string>
     <string name="logoDescripcion">Este es el Logo de la aplicacion</string>
@@ -20,59 +81,6 @@
     <string name="menuOpcion3">Recordatorios</string>
     <string name="menuOpcion4">Metas personalizadas</string>
     <string name="segundaOpcionRecordatorios">Añadir recordatorio</string>
-
-    <string name="blurryImageDescripcion">Imagen borrosa del fondo</string>
-    <string name="twitterLogoDescription">Logo de Twitter para indicar que se comparte en Twitter</string>
-    <string name="googleLogoDescription">Logo de Google para indicar que se comparte en Twitter</string>
-    <string name="FacebookLogoDescription">Logo de Facebook para indicar que se comparte en Twitter</string>
-
-
-    <string name="menuFrutas">Frutas</string>
-    <string name="menuHidratacion">Hidratacion</string>
-    <string name="menuComida">Comida diaria</string>
-    <string name="informacion">informacion General</string>
-    <string name="metasAlimentarias">Metas alimentarias</string>
-    <string name="menuCaminar">Caminar</string>
-    <string name="menuCorrer">Correr</string>
-    <string name="menuEjercicio">Ejercicio variado</string>
-    <string name="metasDeportivas">Metas deportivas</string>
-    <string name="Frutas">Frutas</string>
-    <string name="InfoFrutas">La fruta es buena para...</string>
-    <string name="contador1">3</string>
-    <string name="Platanos">Plátanos</string>
-    <string name="Manzanas">Manzanas</string>
-    <string name="Naranjas">Naranjas</string>
-    <string name="textoLevelUp">Explicar las metas y métodos de obtencion de puntos, aumento de metas....</string>
-    <string name="infohidra">El cuerpo humano necesita de liquidos para un correcto funcionamiento</string>
-    <string name="Otros">Otros</string>
-    <string name="Zumos">Zumos</string>
-    <string name="Agua">Agua</string>
-    <string name="infocomida">Se debe cumplir estas comidas diarias para conseguir las metas</string>
-    <string name="verdura">Verduras</string>
-    <string name="ensalada">Ensalada</string>
-    <string name="carne">Carne/Pescado</string>
-    <string name="introlitros">Introduzca los libros bebidos</string>
-    <string name="alimentacion">Alimentación</string>
-    <string name="infogeneral">Se debe de llevar una vida sana comiendo todo lo que recomendamos en la apliación para de este modo lleven una vida más sana y puedan notar los cambios con nuestro programa de dietas</string>
-    <string name="infocaminar">Caminar es necesario para el cuerpo, ya que no debemos llevar una vvida sedentaria y para ello el cuerpo necesita hacer algun tipo de movimiento</string>
-    <string name="introkm">Seleccione los kilometros que haya realizado</string>
-    <string name="infocorrer">Correr diariamente ayuda a tener una mayor resistencia, mejora las constantes cardiovascualres, mayor fuerza, agilidad...</string>
-    <string name="trote">Trote</string>
-    <string name="sprint">Sprint</string>
-    <string name="sentadillas">Sentadillas</string>
-    <string name="flexiones">Flexiones</string>
-    <string name="zancadas">Zancadas</string>
-    <string name="infoejercicio">Gracias al ejercicio variado conseguimos activar el metabolismo, con lo que conseguiremos evitar la acumulación de grasas</string>
-    <string name="abd">Abdominales</string>
-    <string name="actvfisicas">Actividades físicas</string>
-    <string name="infogeneral_deporte">Para llevar una vida más sana y cumplir los objetivos que nos hemos marcado, debemos de realizar todas estas actividades físicas ya que si queremos notar el cambio solo con la dieta no basta.</string>
-    <string name="tipoFruta">Platanos</string>
-
-
-    <string name="menuItemAppLogo">appLogo</string>
-    <string name="perfilLogo">perfilLogo</string>
-    <string name="estrellaBottomBar">estrellaBottomBar</string>
-
     <string name="obtenerMetasPersonalizadas">Obtener metas personalizadas</string>
     <string name="metasPersoFormularioTxtTitulo">Introduzca los siguientes parámetros</string>
     <string name="pesoHint">Peso en kg</string>
@@ -88,7 +96,7 @@
 
     <string name="MetodoOptencionPuntos">Método de obtención de puntos</string>
     <string name="MetodoOptencionPuntosExplanation">Método de obtención de puntos explicación</string>
-    <string name="tab1MetasPerso">Level Up</string>
+    <string name="levelUpPalabra">Level Up</string>
     <string name="tab2MetasPerso">Comida</string>
     <string name="tab3MetasPerso">Deporte</string>
     <string name="metasComidaDiaX">Metas propuestas de Comida del día X</string>
@@ -96,8 +104,20 @@
     <string name="tab2MetasPersoInfoBoton">Vaya marcando las metas que haya completado</string>
     <string name="progresoWord">Progreso</string>
     <string name="aquíVaMeta">*Aquí va meta*</string>
+    <string name="aquíVaBeneficio">*Aquí va beneficio*</string>
+
     <string name="aquíVaHora">*Aquí va hora*</string>
 
+
+
+
+
+
+
+
+    <string name="blurryImageDescripcion">Imagen borrosa del fondo</string>
+    <string name="twitterLogoDescription">Logo de Twitter para indicar que se comparte en Twitter</string>
+    <string name="googleLogoDescription">Logo de Google para indicar que se comparte en Twitter</string>
     <string name="facebookLogoDescription">Logo de Facebook para indicar que se comparte en Twitter</string>
     <string name="userLogoDescription">Logo de usuario por defecto para todos los usuarios de la App</string>
     <string name="nivelEstrellaDescription">Estrella en la que se ve el nivel actual del usuario</string>
@@ -126,7 +146,7 @@
     en Modelo (de MVP).
 
 
-    <string name="changed_to">Notificación cambiada a las %s</string>
+    <string name="changed_to">Alarma establecida a las %s</string>
     <string name="time_selected_is">La hora seleccionada es:</string>
     <string name="change_time">Establecer Alarma</string>
     <string name="select_time">Selecciona la hora</string>
@@ -183,6 +203,5 @@
     <string name="calendarJulio">Julio</string><string name="calendarAgosto">Agosto</string>
     <string name="calendarSeptiembre">Septiembre</string><string name="calendarOctubre">Octubre</string>
     <string name="calendarNoviembre">Noviembre</string><string name="calendarDiciembre">Diciembre</string>
-
 
 </resources>

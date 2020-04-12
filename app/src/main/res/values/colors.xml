@@ -6,4 +6,7 @@
     <color name="Transparente">#0000</color>
     <color name="Blanco">#FFFFFF</color>
     <color name="Negro">#000000</color>
+    <color name="Naranja">#E64A19</color>
+    <color name="Gris">#05FFFFFF</color>
+
 </resources>
