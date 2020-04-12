@@ -73,7 +73,7 @@ public class metasPersonalizadasResultsActivity extends AppCompatActivity {
 
     private void setupViewPager(ViewPager viewPager) {
         SectionsPageAdapter adapter = new SectionsPageAdapter(getSupportFragmentManager());
-        adapter.addFragment(new Tab1Fragment(), getResources().getString(R.string.tab1MetasPerso));
+        adapter.addFragment(new Tab1Fragment(), getResources().getString(R.string.levelUpPalabra));
         adapter.addFragment(new Tab2Fragment(),  getResources().getString(R.string.tab2MetasPerso));
         adapter.addFragment(new Tab3Fragment(),  getResources().getString(R.string.tab3MetasPerso));
         viewPager.setAdapter(adapter);

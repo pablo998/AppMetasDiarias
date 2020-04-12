@@ -111,11 +111,11 @@
 
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="250dp"
+        android:layout_width="290dp"
         android:layout_height="50dp"
-        android:layout_marginStart="80dp"
+        android:layout_marginStart="60dp"
         android:layout_marginTop="11dp"
-        android:layout_marginEnd="80dp"
+        android:layout_marginEnd="60dp"
         android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toTopOf="@+id/registrarmeButton"
         app:layout_constraintEnd_toEndOf="parent"
@@ -126,8 +126,8 @@
 
         <Spinner
             android:id="@+id/sexo"
-            android:layout_width="100dp"
-            android:layout_height="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="16dp"
             android:entries="@array/sexo"
@@ -136,7 +136,7 @@
 
         <Spinner
             android:id="@+id/añoNacimiento"
-            android:layout_width="100dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="16dp"

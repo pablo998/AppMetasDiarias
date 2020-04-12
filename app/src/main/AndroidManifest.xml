@@ -35,6 +35,7 @@
         <activity android:name=".recordatoriosAddActivity"></activity>
         <activity android:name=".MetasPersonalizadas.metasPersonalizadasResultsActivity"></activity>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <activity android:name=".Frutas.FrutasResultsActivity"></activity>
         <activity android:name=".MetasAlimentacion"></activity>
         <activity android:name=".MetasDeportivas"></activity>
@@ -44,6 +45,20 @@
         <activity android:name=".nivelActivity"></activity>
         <activity android:name=".perfilActivity"></activity>
 >>>>>>> master
+=======
+        <activity android:name=".nivelActivity"></activity>
+        <activity android:name=".perfilActivity"></activity>
+        <activity android:name=".metasDeportivasMenuActivity"></activity>
+        <activity android:name=".metasAlimentariasMenuActivity"></activity>
+        <activity android:name=".informacionGeneralActFisicasActivity"></activity>
+        <activity android:name=".informacionGeneralComidaActivity"></activity>
+        <activity android:name=".FrutasMetas.metasFrutasActivity"></activity>
+        <activity android:name=".HidratacionMetas.hidratacionMetasActivity"></activity>
+        <activity android:name=".ComidaDiariaMetas.metasComidasDiariasActivity"></activity>
+        <activity android:name=".CaminarMetas.metasCaminarActivity"></activity>
+        <activity android:name=".CorrerMetas.metasCorrerActivity"></activity>
+        <activity android:name=".EjercicioVariadoMetas.metasEjerVariadoActivity"></activity>
+>>>>>>> Elias
 
 
         <receiver

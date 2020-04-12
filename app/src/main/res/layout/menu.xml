@@ -11,9 +11,13 @@
 
     <include layout="@layout/appbar"></include>
 
+<<<<<<< HEAD
     <include
         android:id="@+id/include"
         layout="@layout/bottomappbar"></include>
+=======
+    <include layout="@layout/bottomappbar"></include>
+>>>>>>> Elias
 
     <Button
         android:id="@+id/menuOpcion1"
@@ -23,10 +27,10 @@
         android:layout_marginBottom="5dp"
         android:alpha="0.9"
         android:background="@color/Amarillo"
+        android:onClick="onClickMetasAlimentariasBtn"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="@color/Blanco"
         android:textSize="18sp"
-        android:onClick="onClickMetasAlimentarias"
         app:layout_constraintBottom_toTopOf="@+id/menuOpcion2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -79,7 +83,7 @@
         android:layout_marginBottom="5dp"
         android:alpha="0.8"
         android:background="@color/Amarillo"
-        android:onClick="onClickMenuOpcion2"
+        android:onClick="onClickMetasDeportivasBtn"
         app:layout_constraintBottom_toTopOf="@+id/menuOpcion3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -182,7 +186,7 @@
         android:layout_marginTop="10dp"
         android:alpha="0.6"
         android:background="@color/Amarillo"
-        app:layout_constraintBottom_toTopOf="@+id/barraAbajo"
+        android:onClick="onClickMetasPerso"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/menuOpcion3" />

@@ -32,7 +32,7 @@ public class Tab2Adapter
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(context)
-                .inflate(R.layout.metaspersonalizadastab2recyclerviewcontent, parent, false);
+                .inflate(R.layout.metastab2recyclerviewcontent, parent, false);
         return new ViewHolder(view);
     }
 
@@ -56,7 +56,7 @@ public class Tab2Adapter
 
         ViewHolder(View view) {
             super(view);
-            textView = view.findViewById(R.id.metaComidaPerso);
+            textView = view.findViewById(R.id.textContentRecycler);
 
         }
     }

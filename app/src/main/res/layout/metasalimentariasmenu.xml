@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Rojo"
+    android:foregroundTint="#303233"
+    android:orientation="vertical">
+
+    <include layout="@layout/appbar"></include>
+
+    <include layout="@layout/bottomappbar"></include>
+
+    <Button
+        android:id="@+id/menuOpcion1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginBottom="5dp"
+        android:alpha="0.9"
+        android:background="@color/Amarillo"
+        android:onClick="onClickFrutasBtn"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/Blanco"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/menuOpcion2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/opcion1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="@string/frutasPalabra"
+        android:textColor="@color/Blanco"
+        android:textSize="20sp"
+        android:translationZ="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/menuOpcion1"
+        app:layout_constraintStart_toEndOf="@+id/aroNegro1"
+        app:layout_constraintTop_toTopOf="@+id/menuOpcion1" />
+
+    <ImageView
+        android:id="@+id/aroNegro1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="20dp"
+        android:contentDescription="@string/aroNegroDescription"
+        android:translationZ="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/menuOpcion1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/menuOpcion1"
+        app:srcCompat="@drawable/frutas" />
+
+    <Button
+        android:id="@+id/menuOpcion2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:alpha="0.8"
+        android:background="@color/Amarillo"
+        android:onClick="onHidratacionBtn"
+        app:layout_constraintBottom_toTopOf="@+id/menuOpcion3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menuOpcion1" />
+
+    <TextView
+        android:id="@+id/opcion2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="@string/hidratacionPalabra"
+        android:textColor="@color/Blanco"
+        android:textSize="20sp"
+        android:translationZ="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/menuOpcion2"
+        app:layout_constraintStart_toEndOf="@+id/aroNegro2"
+        app:layout_constraintTop_toBottomOf="@+id/menuOpcion1" />
+
+    <ImageView
+        android:id="@+id/aroNegro2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="20dp"
+        android:contentDescription="@string/aroNegroDescription"
+        android:translationZ="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/menuOpcion2"
+        app:layout_constraintStart_toStartOf="@+id/menuOpcion2"
+        app:layout_constraintTop_toTopOf="@+id/menuOpcion2"
+        app:srcCompat="@drawable/agua" />
+
+    <Button
+        android:id="@+id/menuOpcion3"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:alpha="0.7"
+        android:background="@color/Amarillo"
+        android:onClick="onClickComidasDiariasBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menuOpcion2" />
+
+    <TextView
+        android:id="@+id/opcion3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="@string/comidaDiaria"
+        android:textColor="@color/Blanco"
+        android:textSize="20sp"
+        android:translationZ="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/menuOpcion3"
+        app:layout_constraintStart_toEndOf="@+id/aroNegro3"
+        app:layout_constraintTop_toBottomOf="@+id/menuOpcion2" />
+
+    <ImageView
+        android:id="@+id/aroNegro3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="20dp"
+        android:contentDescription="@string/aroNegroDescription"
+        android:translationZ="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/menuOpcion3"
+        app:layout_constraintStart_toStartOf="@+id/menuOpcion3"
+        app:layout_constraintTop_toBottomOf="@+id/menuOpcion2"
+        app:srcCompat="@drawable/comidadiaria" />
+
+    <ImageView
+        android:id="@+id/blurryImage2"
+        android:layout_width="684dp"
+        android:layout_height="652dp"
+        android:layout_marginBottom="55dp"
+        android:alpha="0.2"
+        android:contentDescription="@string/blurryImageDescripcion"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/applogo" />
+
+    <Button
+        android:id="@+id/informacionGnralBtn"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="120dp"
+        android:background="@drawable/roundedbutton"
+        android:backgroundTint="@color/Amarillo"
+        android:onClick="onClickInfoGeneralComida"
+        android:text="@string/infoGeneralPalabras"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/Blanco"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menuOpcion3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

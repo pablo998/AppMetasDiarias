@@ -30,7 +30,7 @@ public class Tab3Fragment extends Fragment {
 
 
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
-        recyclerView = view.findViewById(R.id.metasPersoEjerRecycler);
+        recyclerView = view.findViewById(R.id.metasEjerRecycler);
         recyclerView.setLayoutManager(linearLayoutManager);
 
         ArrayList<EjercicioItems> ejercicioItems = new ArrayList<>();

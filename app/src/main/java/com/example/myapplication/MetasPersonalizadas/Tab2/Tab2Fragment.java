@@ -30,7 +30,7 @@ public class Tab2Fragment extends Fragment {
         View view = inflater.inflate(R.layout.metaspersonalizadasresultadostab2,container,false);
 
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
-        recyclerView = view.findViewById(R.id.metasPersonalizadasTab2Recycler1);
+        recyclerView = view.findViewById(R.id.metasTab2Recycler1);
         recyclerView.setLayoutManager(linearLayoutManager);
 
         ArrayList<ComidaItems> comidaItemsList = new ArrayList<>();

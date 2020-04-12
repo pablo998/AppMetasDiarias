@@ -11,33 +11,33 @@
 
 
     <Button
-        android:id="@+id/cabeceraTab2MetasPerso"
+        android:id="@+id/cabeceraTab2Metas"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_marginBottom="10dp"
         android:alpha="1"
         android:background="@color/Blanco"
         android:clickable="false"
-        app:layout_constraintBottom_toTopOf="@+id/botonInfoTab2MetasPers"
+        app:layout_constraintBottom_toTopOf="@+id/botonInfoTab2Metas"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imagenMetasTab3"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="311dp"
         android:translationZ="10dp"
-        app:layout_constraintBottom_toBottomOf="@+id/cabeceraTab2MetasPerso"
-        app:layout_constraintEnd_toEndOf="@+id/cabeceraTab2MetasPerso"
+        app:layout_constraintBottom_toBottomOf="@+id/cabeceraTab2Metas"
+        app:layout_constraintEnd_toEndOf="@+id/cabeceraTab2Metas"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/cabeceraTab2MetasPerso"
-        app:srcCompat="@drawable/agua" />
+        app:layout_constraintTop_toTopOf="@+id/cabeceraTab2Metas"
+        app:srcCompat="@drawable/verdura" />
 
     <TextView
-        android:id="@+id/textoBotonTab2MetasPerso"
+        android:id="@+id/textoBotonTab2Metas"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
@@ -46,12 +46,12 @@
         android:textSize="20sp"
         android:textAlignment="center"
         android:translationZ="10dp"
-        app:layout_constraintBottom_toBottomOf="@+id/cabeceraTab2MetasPerso"
-        app:layout_constraintStart_toEndOf="@+id/imageView2"
-        app:layout_constraintTop_toTopOf="@+id/cabeceraTab2MetasPerso" />
+        app:layout_constraintBottom_toBottomOf="@+id/cabeceraTab2Metas"
+        app:layout_constraintStart_toEndOf="@+id/imagenMetasTab3"
+        app:layout_constraintTop_toTopOf="@+id/cabeceraTab2Metas" />
 
     <Button
-        android:id="@+id/botonInfoTab2MetasPers"
+        android:id="@+id/botonInfoTab2Metas"
         android:layout_width="300dp"
         android:layout_height="80dp"
         android:layout_marginTop="10dp"
@@ -65,7 +65,7 @@
         app:layout_constraintBottom_toTopOf="@+id/layoutProgreso"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cabeceraTab2MetasPerso" />
+        app:layout_constraintTop_toBottomOf="@+id/cabeceraTab2Metas" />
 
     <LinearLayout
         android:id="@+id/layoutProgreso"
@@ -77,7 +77,7 @@
         app:layout_constraintBottom_toTopOf="@+id/scrollView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/botonInfoTab2MetasPers">
+        app:layout_constraintTop_toBottomOf="@+id/botonInfoTab2Metas">
 
         <Space
             android:layout_width="20dp"
@@ -114,7 +114,7 @@
         app:layout_constraintTop_toBottomOf="@+id/layoutProgreso">
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/metasPersonalizadasTab2Recycler1"
+            android:id="@+id/metasTab2Recycler1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </ScrollView>
